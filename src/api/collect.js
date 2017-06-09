@@ -4,13 +4,14 @@
 import Vue from 'vue'
 import api from './index'
 
-/*var getCollectsByUserId = "/api/alinews-collects";*/
+var addSubscribeApi = "/api/subscribe-users";
 
 export default {
- /* getCollectsByUserId : function(userid){
+  addSubscribe : function(phone,name){
     var params = {
-      userid:userid
+      phone:phone,
+      name:name,
     }
-    return api.get(getCollectsByUserId,params)
-  }*/
+    return api.post(addSubscribeApi,{},params)
+  }
 }

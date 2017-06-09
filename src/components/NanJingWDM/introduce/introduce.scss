@@ -1,0 +1,30 @@
+.introduce{
+  .int-title,.int-body{
+    line-height:130%;
+    /*margin-top:1%;*/
+  }
+  .swiper-container-horizontal{
+    background: #343540;
+    color: #ffffff;
+    border-radius: 8px;
+  }
+  .swiper-introduce{
+    padding:10px 10px;
+  }
+  /*响应式*/
+  @media (min-width: 720px) {
+  }
+
+  @media (min-width: 1080px) {
+  }
+
+  @media (min-width: 1366px) {
+  }
+
+  @media (min-width: 1680px) {
+  }
+
+  @media (min-width: 1920px) {
+  }
+
+}

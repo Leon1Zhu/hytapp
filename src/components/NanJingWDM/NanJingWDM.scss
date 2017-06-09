@@ -1,0 +1,46 @@
+.mainpage{
+  position: relative;
+  /*.swiper-pagination-bullet{
+  }*/
+  .titleInfo{
+    color: #ffffff;
+    font-weight: 700;
+    background: #40b6ff;
+    width:100%;
+    z-index:10;
+    position: absolute;
+    height:32px;
+    text-align: center;
+    padding:2px 0px;
+    line-height:200%;
+  }
+  .swiperImg{
+    width:100%;
+  }
+  .el-input,.el-input__inner{
+    width:85%;
+    margin-left:7.5%;
+    margin-top:2%;
+  }
+  .el-button--info,.el-button--danger{
+    margin-top:2%;
+    width:72%;
+    margin-left:14%;
+  }
+  /*响应式*/
+  @media (min-width: 720px) {
+  }
+
+  @media (min-width: 1080px) {
+  }
+
+  @media (min-width: 1366px) {
+  }
+
+  @media (min-width: 1680px) {
+  }
+
+  @media (min-width: 1920px) {
+  }
+}
+

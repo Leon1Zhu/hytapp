@@ -2,5 +2,55 @@ html,body,#app{
   position: relative;
   width:100%;
   height:100%;
+  font-family: 微软雅黑;
+}
+
+.font-size-top{
+  font-size:18px;
+}
+.font-size-title{
+  font-size:16px;
+}
+.font-size-body{
+  font-size:14px;
+}
+.font-size-sup{
+  font-size:12px;
+}
+/*字体响应式*/
+@media (min-width:720px) {
+  .font-size-top{
+    font-size:36px;
+  }
+  .font-size-title{
+    font-size:32px;
+  }
+  .font-size-body{
+    font-size:28px;
+  }
+  .font-size-sup{
+    font-size:24px;
+  }
+  .complateItem{
+    width:216px;
+  }
+}
+
+@media (min-width:1080px) {
+  .font-size-top{
+    font-size:54px;
+  }
+  .font-size-title{
+    font-size:48px;
+  }
+  .font-size-body{
+    font-size:42px;
+  }
+  .font-size-sup{
+    font-size:36px;
+  }
+  .complateItem{
+    width:324px;
+  }
 }
 
