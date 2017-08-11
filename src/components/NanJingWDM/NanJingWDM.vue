@@ -18,7 +18,8 @@
       <el-input v-model="name" placeholder="姓名（必填）"></el-input>
       <el-input v-model="phone" placeholder="联系电话(必填)"></el-input>
       <el-button type="info" @click="addSubscribe">提交</el-button>
-      <el-button type="danger">致电售楼处预约</el-button>
+      <el-button type="danger"><a style="color: #fff" href="tel:18913804822">致电售楼处预约</a></el-button>
+      <p style="margin-top: 2%;text-align: center;">现在预约立享3万抵4万团购优惠</p>
     </div>
 </template>
 
@@ -48,17 +49,31 @@ import subscribeApi  from '../../api/collect'
         },
         methods: {
             addSubscribe(){
-              if(this.phone==null || this.phone==""){
-                 alert("手机号不能为空！")
-              }
+                var that= this;
               if(this.name==null || this.name==""){
                 alert("姓名不能为空！")
+                return;
               }
-              subscribeApi.addSubscribe().then((response) =>{
-                console.log(11111)
-              })/*.catch((response)=>{
-                console.log(22222)
-              })*/
+              if(this.phone==null || this.phone==""){
+                 alert("手机号不能为空！")
+                return;
+              }
+
+              subscribeApi.addSubscribe(this.phone,this.name).then((response) =>{
+                console.log(222)
+                alert("预约成功！")
+                that.phone = "";
+                that.name = ""
+
+              }).catch((response)=>{
+                  console.log(1111111)
+                  console.log(response)
+                if(response.message!=null || response.message!="")
+                alert(response.message)
+                else alert("预约失败！")
+                that.phone = "";
+                that.name = ""
+              })
             }
         }
     }
