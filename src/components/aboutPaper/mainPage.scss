@@ -4,6 +4,82 @@
   height:100%;
   overflow: auto;
   /* CSS Document */
+  .mainContent{
+    height: auto;
+    .swiperImg{
+      width:100%;
+    }
+    .swiperImg:not(:first-child){
+      margin-left:0%;
+    }
+  }
+
+
+  @media (min-width: 720px) {
+    .mainContent {
+      height: auto;
+      .swiperImg {
+        width: 100%;
+      }
+      .swiperImg:not(:first-child){
+        margin-left:0%;
+      }
+    }
+  }
+
+  @media (min-width: 1080px) {
+    .mainContent {
+      height: auto;
+      .swiperImg {
+        width: 45%;
+      }
+      .swiperImg:not(:first-child){
+        margin-left:4%;
+      }
+      .swiperImg:nth-child(3n){
+        margin-left:0%;
+      }
+    }
+  }
+
+  @media (min-width: 1366px) {
+    .mainContent {
+      height: auto;
+      .swiperImg {
+        width: 45%;
+      }
+      .swiperImg:not(:first-child){
+        margin-left:4%;
+      }
+      .swiperImg:nth-child(3n){
+        margin-left:0%;
+      }
+    }
+  }
+
+  @media (min-width: 1680px) {
+    .mainContent {
+      height: auto;
+      .swiperImg {
+        width: 30%;
+      }
+      .swiperImg:not(:first-child){
+        margin-left:2%;
+      }
+    }
+  }
+
+  @media (min-width: 1920px) {
+    .mainContent {
+      height: auto;
+      .swiperImg {
+        width: 30%;
+      }
+      .swiperImg:not(:first-child){
+        margin-left:2%;
+      }
+    }
+  }
   .personal{
     width:1280px;
     min-height:600px;

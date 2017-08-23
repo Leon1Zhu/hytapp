@@ -1,7 +1,10 @@
 <template>
     <div class="aboutPage">
       <div class="mainContent">
-        <img style="width: 100%;" src="../../assets/mainPage.jpeg">
+        <img class="swiperImg" src="../../assets/pic-3.jpg">
+        <img class="swiperImg" src="../../assets/pic-5.jpg">
+        <img class="swiperImg" src="../../assets/pic-2.jpg">
+
       </div>
       <div class="about_con" >
        <!-- <p style="text-align: center;font-size: 30px;margin-top: 1%;">南京华云庭房地产投资顾问有限公司</p>-->
@@ -22,7 +25,7 @@
         </p>
         <div style="margin-top: 2%;">
           <span>联系人：孙经理</span>
-          <span>手机：<a href="tel:13770845872" style="color: deepskyblue;">13770845872</a></span>
+          <span>手机：<a href="tel:15251885168" style="color: deepskyblue;">15251885168</a></span>
         </div>
       </footer>
     </div>

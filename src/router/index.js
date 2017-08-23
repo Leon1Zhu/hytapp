@@ -8,6 +8,10 @@ const WDM = resolve => require(['@/components/NanJingWDM/NanJingWDM'], resolve);
 const aboutPage = resolve => require(['@/components/aboutPaper/mainPage'], resolve);
 const managePage = resolve => require(['@/components/NanJingWDM/ManagePage'], resolve);
 
+const zzPro = resolve => require(['@/components/zhangzhou/zhangzhou'], resolve);
+
+const lhPro = resolve => require(['@/components/longhu/longhu'], resolve);
+
 export default new Router({
   /*mode: 'history',*/
   base: __dirname,
@@ -17,5 +21,7 @@ export default new Router({
     {path: '/wdm', name: 'wdm', component: WDM},
     {path: '/', name: 'aboutPage', component: aboutPage},
     {path: '/managePage', name: 'managePage', component: managePage},
+    {path: '/zzPro', name: 'zzPro', component: zzPro},
+    {path: '/lhPro', name: 'lhPro', component: lhPro},
   ]
 })

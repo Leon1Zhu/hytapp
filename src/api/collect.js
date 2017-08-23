@@ -11,21 +11,26 @@ var getSubscribeTableApi = "/api/subscribe-get-table-user";
 var getSubscribeChartApi = "/api/subscribe-get-chart-count";
 
 export default {
-  addSubscribe : function(phone,name){
+  addSubscribe : function(phone,name,proName){
     var params = {
       phone:phone,
       name:name,
+      proName:proName
     }
     return api.post(addSubscribeApi,{},params)
   },
-  getSubscribeTable : function(index,length){
+  getSubscribeTable : function(index,length,proName){
     var params = {
       index:index,
       length:length,
+      proName:proName
     }
     return api.get(getSubscribeTableApi,params)
   },
-  getSubscribeChart : function(){
-    return api.get(getSubscribeChartApi,{})
+  getSubscribeChart : function(proName){
+    var params = {
+      proName:proName
+    }
+    return api.get(getSubscribeChartApi,params)
   },
 }

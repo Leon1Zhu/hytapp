@@ -3,7 +3,11 @@
       <!--<div class="title font-size-top">南京万达茂</div>-->
       <swiper :options="swiperOptionintroduce" ref="mySwiperintroduce">
         <!-- slides -->
-        <swiper-slide>
+      <!--  <swiper-slider v-for="item in proContent">
+          <div class="int-title font-size-title">{{item.title}}</div>
+          <div class="int-body" v-for="content in item.content">&nbsp;&nbsp;&nbsp;&nbsp;{{content}}</div>
+        </swiper-slider>-->
+      <!-- <swiper-slide>
           <div class="swiper-introduce font-size-body">
             <div class="int-title font-size-title">推荐理由</div>
             <div class="int-body">&nbsp;&nbsp;&nbsp;&nbsp;1,（品牌影响力）万达集团品牌房企，150亿文旅旗舰，</div>
@@ -25,7 +29,7 @@
             <div class="int-body">&nbsp;&nbsp;&nbsp;&nbsp;2.区域交通配套</div>
             <div class="int-body">&nbsp;&nbsp;&nbsp;&nbsp;3.三线地铁畅达南京主城，二号线，四号线（堪称南京的换乘大王）、15号线对接宁镇扬。</div>
           </div>
-        </swiper-slide>
+        </swiper-slide>-->
       </swiper>
     </div>
 </template>
@@ -33,20 +37,36 @@
 <script>
     import  './introduce.scss'
     export default{
+       props: ['proContent'],
         data(){
             return {
               swiperOptionintroduce: {
-                autoplay: 5000,
+                notNextTick: true,
                 loop: true,
                 pagination: '.swiper-pagination',
                 paginationClickable :true,
-              }
+              },
+              content: this.proContent
             }
         },
         components: {},
         created(){
         },
         mounted(){
+            console.log(this.$refs.mySwiperintroduce.swiper)
+            var that = this;
+            console.log(that.content)
+            for(let i = 0;i<that.content.length;i++){
+                let dom = '<div class="swiper-slide"> ' +
+                  '<div class="int-title font-size-title">'+that.content[i].title+'</div>' ;
+                for(let t=0;t<that.content[i].content.length;t++){
+                    dom+='  <div class="int-body" v-for="content in item.content">&nbsp;&nbsp;&nbsp;&nbsp;'+that.content[i].content[t]+'</div>'
+                }
+                 dom+= '</div>'
+              that.$refs.mySwiperintroduce.swiper.appendSlide(dom)
+            }
+          that.$refs.mySwiperintroduce.swiper.updateSlidesSize()
+
         },
         methods: {}
     }

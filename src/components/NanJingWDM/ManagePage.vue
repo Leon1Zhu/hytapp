@@ -1,6 +1,18 @@
 <template>
     <div class="manage-page">
-      <div style="padding: 10px;">预约名单:</div>
+      <div >
+          <div style="padding: 10px;">预约名单:</div>
+          <div style="position: absolute;right:10px;top: 3px;">
+           <el-select v-model="value" placeholder="请选择" @change="selectChangeFun">
+              <el-option
+                v-for="item in options"
+                :key="item.value"
+                :label="item.label"
+                :value="item.value">
+              </el-option>
+            </el-select>
+          </div>
+      </div>
       <el-table
         :data="tableData"
         stripe
@@ -47,6 +59,9 @@ import api from '../../api/collect'
                 pagelength:10,
                 totalCount:0,
                 tableData:[],
+                options:PROOPTION,
+                proName:'wdm',
+                value:'南京万达茂'
             }
         },
         components: {},
@@ -56,6 +71,11 @@ import api from '../../api/collect'
           vm.getTableInfo()
         },
         methods: {
+          selectChangeFun(v1,v2){
+              this.proName = v1
+              this.getTableInfo();
+              this.setCharts();
+          },
           handleSizeChange(val) {
               this.pagelength = val;
               this.getTableInfo();
@@ -66,9 +86,7 @@ import api from '../../api/collect'
           },
             getTableInfo(){
                 let that =this;
-                api.getSubscribeTable(this.nowpage-1,this.pagelength).then(response=>{
-                    console.log(111)
-                  console.log(response)
+                api.getSubscribeTable(this.nowpage-1,this.pagelength,this.proName).then(response=>{
                   this.totalCount = response.data.totalElements
                    let data = response.data.content;
                     for(let i=0;i<data.length;i++){
@@ -80,7 +98,7 @@ import api from '../../api/collect'
                 })
             },
             setCharts(){
-                api.getSubscribeChart().then((response) =>{
+                api.getSubscribeChart(this.proName).then((response) =>{
                     var responsedata = response.data;
                     var data =[];
                     var dataName=[];
