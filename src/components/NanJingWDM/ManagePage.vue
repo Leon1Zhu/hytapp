@@ -90,7 +90,7 @@ import api from '../../api/collect'
                   this.totalCount = response.data.totalElements
                    let data = response.data.content;
                     for(let i=0;i<data.length;i++){
-                        data[i].subscribeTime = new Date( data[i].subscribeTime).Format("yyyy-MM-dd")
+                        data[i].subscribeTime = new Date( data[i].subscribeTime).Format("yyyy-MM-dd hh:mm:ss")
                     }
                   that.tableData = data
                 }).catch(response=>{

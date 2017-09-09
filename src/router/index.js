@@ -11,6 +11,7 @@ const managePage = resolve => require(['@/components/NanJingWDM/ManagePage'], re
 const zzPro = resolve => require(['@/components/zhangzhou/zhangzhou'], resolve);
 
 const lhPro = resolve => require(['@/components/longhu/longhu'], resolve);
+const suning = resolve => require(['@/components/suning/suning'], resolve);
 
 export default new Router({
   /*mode: 'history',*/
@@ -23,5 +24,6 @@ export default new Router({
     {path: '/managePage', name: 'managePage', component: managePage},
     {path: '/zzPro', name: 'zzPro', component: zzPro},
     {path: '/lhPro', name: 'lhPro', component: lhPro},
+    {path: '/suning', name: 'suning', component: suning},
   ]
 })
