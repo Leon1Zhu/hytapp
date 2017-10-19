@@ -3,10 +3,11 @@
     <div class="titleInfo font-size-top">润泰市场</div>
     <swiper class="swiperImgConter" :options="swiperOption" ref="mySwiper">
       <!-- slides -->
-      <swiper-slide><img class="swiperImg" src="../../assets/rtsc/rtsc1.jpeg"></swiper-slide>
-      <swiper-slide><img class="swiperImg" src="../../assets/rtsc/rtsc2.jpeg"></swiper-slide>
-      <swiper-slide><img class="swiperImg" src="../../assets/rtsc/rtsc3.jpeg"></swiper-slide>
-      <swiper-slide><img class="swiperImg" src="../../assets/rtsc/rtsc4.jpeg"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/JYDF/JYDF1.png"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/JYDF/JYDF2.png"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/JYDF/JYDF3.png"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/JYDF/JYDF4.png"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/JYDF/JYDF5.png"></swiper-slide>
       <!-- Optional controls -->
       <div class="swiper-pagination"  slot="pagination"></div>
       <div class="swiper-scrollbar"   slot="scrollbar"></div>
@@ -23,7 +24,7 @@
   import '../NanJingWDM/NanJingWDM.scss'
   import introduce from '../NanJingWDM/introduce/introduce.vue'
   import subscribeApi  from '../../api/collect'
-  import './rtsc.scss'
+  import './JYDF.scss'
   export default{
     data(){
       return {
@@ -35,7 +36,7 @@
         },
         phone:null,
         name:null,
-        zzPro:RTSCPRO
+        zzPro:JYDFPRO
       }
     },
     components: {
@@ -57,7 +58,7 @@
           return;
         }
 
-        subscribeApi.addSubscribe(this.phone,this.name,'RTSC').then((response) =>{
+        subscribeApi.addSubscribe(this.phone,this.name,'JYDF').then((response) =>{
           alert("预约成功！")
           that.phone = "";
           that.name = ""

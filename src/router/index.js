@@ -21,6 +21,8 @@ const yxpro = resolve => require(['@/components/yx/yx'], resolve);
 const wdbp = resolve => require(['@/components/wdBachelorPad/wdBachelorPad'], resolve);
 
 const rtsc = resolve => require(['@/components/rtsc/rtsc'], resolve);
+const jydf = resolve => require(['@/components/JYDF/JYDF'], resolve);
+
 export default new Router({
   /*mode: 'history',*/
   base: __dirname,
@@ -39,5 +41,6 @@ export default new Router({
     {path: '/yxpro', name: 'yxpro', component: yxpro},
     {path: '/wdbalpad', name: 'wdbp', component: wdbp},
     {path: '/rtsc', name: 'rtsc', component: rtsc},
+    {path: '/jydf', name: 'jydf', component: jydf},
   ]
 })

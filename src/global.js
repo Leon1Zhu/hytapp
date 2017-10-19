@@ -139,6 +139,17 @@ global.WDBPPRO = [
   }
 ]
 
+global.JYDFPRO = [
+  {
+    title:  '推荐理由',
+    content:[
+      "1.万科品牌，施工精度、质量高。",
+      "2.淳化板块采用PPP发展模式，建设拥有上百家生命科技企业的产业基地，与大学城板块相互配合，未来的居住需求大，发展前景值得期待。",
+      "3.距离梅龙湖自然绿肺区约1.8米。",
+    ]
+  }
+]
+
 global.PROOPTION=[{
     value: 'WDM',
     label: '南京万达茂'
@@ -169,4 +180,7 @@ global.PROOPTION=[{
 },{
   value:"RTSC",
   label: "润泰市场"
+},{
+  value:"JYDF",
+  label:"金域东方"
 }]
