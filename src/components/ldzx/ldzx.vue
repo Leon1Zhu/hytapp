@@ -1,12 +1,13 @@
 <template>
-  <div class="mainpage longhu">
-    <div class="titleInfo font-size-top">龙湖新壹城</div>
-    <swiper  class="myswiper" :options="swiperOption" ref="mySwiper">
+  <div class="mainpage">
+    <div class="titleInfo font-size-top">绿地中心</div>
+    <swiper :options="swiperOption" ref="mySwiper">
       <!-- slides -->
-      <swiper-slide><img class="swiperImg" src="../../assets/longhu/longhu1.jpg"></swiper-slide>
-      <swiper-slide><img class="swiperImg" src="../../assets/longhu/longhu2.jpg"></swiper-slide>
-      <swiper-slide><img class="swiperImg" src="../../assets/longhu/longhu3.jpg"></swiper-slide>
-      <swiper-slide><img class="swiperImg" src="../../assets/longhu/longhu4.jpg"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/ldzx/2.jpg"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/ldzx/4.jpg"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/ldzx/5.jpg"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/ldzx/1.jpg"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/ldzx/3.jpg"></swiper-slide>
       <!-- Optional controls -->
       <div class="swiper-pagination"  slot="pagination"></div>
       <div class="swiper-scrollbar"   slot="scrollbar"></div>
@@ -16,13 +17,11 @@
     <el-input v-model="phone" placeholder="联系电话(必填)"></el-input>
     <el-button type="info" @click="addSubscribe">提交</el-button>
     <el-button type="danger"><a style="color: #fff" href="tel:02558917591">致电售楼处预约</a></el-button>
-   <!-- <p style="margin-top: 2%;text-align: center;">现在预约立享5万抵8万优惠！</p>-->
   </div>
 </template>
 
 <script>
   import '../NanJingWDM/NanJingWDM.scss'
-  import './longhu.scss'
   import introduce from '../NanJingWDM/introduce/introduce.vue'
   import subscribeApi  from '../../api/collect'
   export default{
@@ -36,7 +35,7 @@
         },
         phone:null,
         name:null,
-        zzPro:LHPROJECT
+        zzPro:LDZXPRO
       }
     },
     components: {
@@ -58,7 +57,7 @@
           return;
         }
 
-        subscribeApi.addSubscribe(this.phone,this.name,'LH').then((response) =>{
+        subscribeApi.addSubscribe(this.phone,this.name,'LDZX').then((response) =>{
           console.log(222)
           alert("预约成功！")
           that.phone = "";
