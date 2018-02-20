@@ -99,10 +99,12 @@ import api from '../../api/collect'
             },
             setCharts(){
                 api.getSubscribeChart(this.proName).then((response) =>{
+                    console.log(response)
                     var responsedata = response.data;
                     var data =[];
                     var dataName=[];
                     var seriesData=[];
+                    console.log(responsedata)
                   responsedata.forEach((item)=>{
                     data.push(new Date(item.subscribe_time).Format("yyyy-MM-dd"))
                     seriesData.push(item.usercount)

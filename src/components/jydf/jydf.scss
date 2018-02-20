@@ -1,8 +1,16 @@
-.longhu{
-  .myswiper{
-      .swiper-slide{
-        height:249px;
+
+.wdxh.mainpage .titleInfo{
+  top: -32px;;
+}
+.wdxh{
+  .swiperImgConter{
+    margin-top:32px;
+    .swiper-slide{
+      height:460px;
+      img{
+        height:100%;
       }
+    }
   }
 
 }

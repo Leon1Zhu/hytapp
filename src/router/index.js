@@ -10,18 +10,17 @@ const managePage = resolve => require(['@/components/NanJingWDM/ManagePage'], re
 
 const zzPro = resolve => require(['@/components/zhangzhou/zhangzhou'], resolve);
 
-const lhPro = resolve => require(['@/components/longhu/longhu'], resolve);
 const suning = resolve => require(['@/components/suning/suning'], resolve);
-const ldzx = resolve => require(['@/components/ldzx/ldzx'], resolve);
-const lch = resolve => require(['@/components/lch/lch'], resolve);
 
 const yck = resolve => require(['@/components/yckinmaQ/yckinmaQ'], resolve);
 const yxpro = resolve => require(['@/components/yx/yx'], resolve);
 
 const wdbp = resolve => require(['@/components/wdBachelorPad/wdBachelorPad'], resolve);
 
-const rtsc = resolve => require(['@/components/rtsc/rtsc'], resolve);
-const jydf = resolve => require(['@/components/JYDF/JYDF'], resolve);
+const jydf = resolve => require(['@/components/jydf/jydf'], resolve);
+
+
+const hmme = resolve => require(['@/components/hmme/hmme'], resolve);
 
 export default new Router({
   /*mode: 'history',*/
@@ -33,14 +32,11 @@ export default new Router({
     {path: '/', name: 'aboutPage', component: aboutPage},
     {path: '/projectManagePage', name: 'managePage', component: managePage},
     {path: '/zzPro', name: 'zzPro', component: zzPro},
-    {path: '/lhPro', name: 'lhPro', component: lhPro},
     {path: '/suning', name: 'suning', component: suning},
-    {path: '/ldzx', name: 'ldzx', component: ldzx},
-    {path: '/lch', name: 'lch', component: lch},
     {path: '/yck', name: 'yck', component: yck},
     {path: '/yxpro', name: 'yxpro', component: yxpro},
     {path: '/wdbalpad', name: 'wdbp', component: wdbp},
-    {path: '/rtsc', name: 'rtsc', component: rtsc},
     {path: '/jydf', name: 'jydf', component: jydf},
+    {path: '/hmme', name: 'hmme', component: hmme},
   ]
 })

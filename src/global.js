@@ -2,7 +2,7 @@
  * Created by zhuliang on 2017/4/6.
  */
 /*global.SERVICEURL="http://localhost:8080"*/
-global.SERVICEURL="http://localhost:8080"
+global.SERVICEURL="http://106.15.90.228:9090"
 
 
 if(process.env.NODE_ENV=="production"){
@@ -46,15 +46,7 @@ global.ZZPROJECT = [
   }
 ]
 
-global.LHPROJECT = [
-  {
-    title:  '推荐理由',
-    content:[
-      "1.龙湖·新壹城作为南京新规出台前最后一批获批复的4.8米挑高的产品，成为市场关注的稀缺目标.",
-      "2:交通便利：项目位于江宁大学城，毗邻地铁1号线交院站2号出口，周边配套齐全.",
-    ]
-  }
-]
+
 
 global.SUNINGPRO = [
   {
@@ -69,29 +61,7 @@ global.SUNINGPRO = [
 ]
 
 
-global.LDZXPRO = [
-  {
-    title:  '推荐理由',
-    content:[
-      "1.世界500强绿地集团打造值得信赖.",
-      "2.地理位置优越，项目位于湖南路商圈核心区域.",
-      "3.交通警便利地铁5号线无缝对接，距离地铁1号线玄武门站步行5分钟，多大20条公交，直达南京各个区域.",
-      "4.18到60平独立产权铺，投资门槛低，托管五年，年回报百分之六",
-    ]
-  }
-]
 
-global.LCHPRO = [
-  {
-    title:  '推荐理由',
-    content:[
-      "1.品牌房企，世界500强和记黄埔集团开发.",
-      "2.现房发售，即买即租即用，独立上下水，有通风系统.",
-      "3.五大商圈（虹悦城）产业园分布密集.",
-      "4.写字楼面积40平-100平，门面房100-300平，户型多样可自由组合",
-    ]
-  }
-]
 
 global.YCKPRO = [
   {
@@ -150,25 +120,39 @@ global.JYDFPRO = [
   }
 ]
 
+
+
+global.HMMEPRO = [
+  {
+    title:  '推荐理由',
+    content:[
+      "1.市中心.双地铁口现房－一2号线3号线永怡路站一横一纵惯穿全城。",
+      "2.绝版精装现房，投资小回报高，即买即收租。",
+      "3.周边配套齐全，餐饮，娱乐，购物，游乐场，高档小区等样样俱全。",
+      "4.大品牌开发商，为您的投资保驾护航",
+    ]
+  },{
+    title:  '项目简介',
+    content:[
+      "开 发 商：鸿呜摩尔房地产业开发有限公司",
+      "产权年限：40年",
+      "户型面积：公寓45-50平，商铺30-60平",
+      "在售价格：公寓11000元/㎡ ，商铺15000—40000元/㎡",
+    ]
+  }
+]
+
+
 global.PROOPTION=[{
     value: 'WDM',
     label: '南京万达茂'
   }, {
     value: 'zz',
     label: '漳州红星广场'
-  }, {
-  value: 'LH',
-  label: '龙湖新壹城'
-}, {
+  },{
   value: 'SN',
   label: '苏宁紫金嘉悦'
-}, {
-  value: 'LDZX',
-  label: '绿地中心'
-}, {
-  value: 'LCH',
-  label: '涟城汇'
-}, {
+},  {
   value: 'YCK',
   label: '银城kinmaQ＋社区'
 }, {
@@ -178,9 +162,9 @@ global.PROOPTION=[{
   value: 'WDBP',
   label: '万科星荟'
 },{
-  value:"RTSC",
-  label: "润泰市场"
-},{
   value:"JYDF",
   label:"金域东方"
-}]
+},{
+    value:"HMME",
+    label:"鸿鸣摩尔金贸国际"
+  }]
