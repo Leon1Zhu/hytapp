@@ -12,15 +12,14 @@ const zzPro = resolve => require(['@/components/zhangzhou/zhangzhou'], resolve);
 
 const suning = resolve => require(['@/components/suning/suning'], resolve);
 
-const yck = resolve => require(['@/components/yckinmaQ/yckinmaQ'], resolve);
-const yxpro = resolve => require(['@/components/yx/yx'], resolve);
 
-const wdbp = resolve => require(['@/components/wdBachelorPad/wdBachelorPad'], resolve);
 
 const jydf = resolve => require(['@/components/jydf/jydf'], resolve);
 
 
 const hmme = resolve => require(['@/components/hmme/hmme'], resolve);
+
+const wkxh = resolve => require(['@/components/wkxh/wkxh'], resolve);
 
 export default new Router({
   /*mode: 'history',*/
@@ -33,10 +32,8 @@ export default new Router({
     {path: '/projectManagePage', name: 'managePage', component: managePage},
     {path: '/zzPro', name: 'zzPro', component: zzPro},
     {path: '/suning', name: 'suning', component: suning},
-    {path: '/yck', name: 'yck', component: yck},
-    {path: '/yxpro', name: 'yxpro', component: yxpro},
-    {path: '/wdbalpad', name: 'wdbp', component: wdbp},
     {path: '/jydf', name: 'jydf', component: jydf},
     {path: '/hmme', name: 'hmme', component: hmme},
+    {path: '/wkxh', name: 'wkxh', component: wkxh},
   ]
 })

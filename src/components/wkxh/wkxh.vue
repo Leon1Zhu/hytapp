@@ -1,11 +1,13 @@
 <template>
-  <div class="mainpage wdxh">
+  <div class="mainpage">
     <div class="titleInfo font-size-top">万科星荟</div>
-    <swiper class="swiperImgConter" :options="swiperOption" ref="mySwiper">
+    <swiper :options="swiperOption" ref="mySwiper">
       <!-- slides -->
-      <swiper-slide><img class="swiperImg" src="../../assets/wdBachelorPad/wd1.jpeg"></swiper-slide>
-      <swiper-slide><img class="swiperImg" src="../../assets/wdBachelorPad/wd2.jpeg"></swiper-slide>
-      <swiper-slide><img class="swiperImg" src="../../assets/wdBachelorPad/wd3.jpeg"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/wkxh/wkxh1.jpeg"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/wkxh/wkxh2.jpeg"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/wkxh/wkxh4.png"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/wkxh/wkxh3.png"></swiper-slide>
+
       <!-- Optional controls -->
       <div class="swiper-pagination"  slot="pagination"></div>
       <div class="swiper-scrollbar"   slot="scrollbar"></div>
@@ -14,7 +16,7 @@
     <el-input v-model="name" placeholder="姓名（必填）"></el-input>
     <el-input v-model="phone" placeholder="联系电话(必填)"></el-input>
     <el-button type="info" @click="addSubscribe">提交</el-button>
-    <el-button type="danger"><a style="color: #fff" href="tel:02558917591">致电售楼处预约</a></el-button>
+    <el-button type="danger"><a style="color: #fff" href="tel:18851177000">致电售楼处预约</a></el-button>
   </div>
 </template>
 
@@ -22,7 +24,6 @@
   import '../NanJingWDM/NanJingWDM.scss'
   import introduce from '../NanJingWDM/introduce/introduce.vue'
   import subscribeApi  from '../../api/collect'
-  import './wdBachelorPad.scss'
   export default{
     data(){
       return {
@@ -34,7 +35,7 @@
         },
         phone:null,
         name:null,
-        zzPro:WDBPPRO
+        zzPro:WKXHPRO
       }
     },
     components: {
@@ -56,7 +57,7 @@
           return;
         }
 
-        subscribeApi.addSubscribe(this.phone,this.name,'WDBP').then((response) =>{
+        subscribeApi.addSubscribe(this.phone,this.name,'WKXH').then((response) =>{
           alert("预约成功！")
           that.phone = "";
           that.name = ""
