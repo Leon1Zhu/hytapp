@@ -21,6 +21,9 @@ const hmme = resolve => require(['@/components/hmme/hmme'], resolve);
 
 const wkxh = resolve => require(['@/components/wkxh/wkxh'], resolve);
 
+
+const jlxc = resolve => require(['@/components/jlxc/jlxc'], resolve);
+
 export default new Router({
   /*mode: 'history',*/
   base: __dirname,
@@ -35,5 +38,6 @@ export default new Router({
     {path: '/jydf', name: 'jydf', component: jydf},
     {path: '/hmme', name: 'hmme', component: hmme},
     {path: '/wkxh', name: 'wkxh', component: wkxh},
+    {path: '/jlxc', name: 'jlxc', component: jlxc},
   ]
 })

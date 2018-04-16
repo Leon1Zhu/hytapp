@@ -98,6 +98,17 @@ global.WKXHPRO = [{
   ]
 }]
 
+global.JLXCPRO = [{
+  title: '推荐理由',
+  content: [
+    "1. 低总价首付15万起。",
+    "2. 南北通透花园洋房户型方正。",
+    "3. 环厦门圈最便宜70年产权学区住宅。",
+    "4. 厦门西首付15万买住宅不是梦！",
+  ]
+}]
+
+
 
 
 global.HMMEPRO = [
@@ -142,4 +153,7 @@ global.PROOPTION=[{
   },{
   value:"WKXH",
   label:"万科星荟"
+},{
+  value:"JLXC",
+  label:"九龙兴城"
 }]
