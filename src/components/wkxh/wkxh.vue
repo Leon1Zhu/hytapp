@@ -3,10 +3,9 @@
     <div class="titleInfo font-size-top">万科星荟</div>
     <swiper :options="swiperOption" ref="mySwiper">
       <!-- slides -->
-      <swiper-slide><img class="swiperImg" src="../../assets/wkxh/wkxh1.jpeg"></swiper-slide>
-      <swiper-slide><img class="swiperImg" src="../../assets/wkxh/wkxh2.jpeg"></swiper-slide>
-      <swiper-slide><img class="swiperImg" src="../../assets/wkxh/wkxh4.png"></swiper-slide>
-      <swiper-slide><img class="swiperImg" src="../../assets/wkxh/wkxh3.png"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/wkxh/wkxh1.jpg"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/wkxh/wkxh2.jpg"></swiper-slide>
+      <swiper-slide><img class="swiperImg" src="../../assets/wkxh/wkxh3.jpg"></swiper-slide>
 
       <!-- Optional controls -->
       <div class="swiper-pagination"  slot="pagination"></div>
