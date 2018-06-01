@@ -1,5 +1,5 @@
 <template>
-    <div class="manage-page">
+    <div class="manage-page" v-show="successPWD" >
       <div >
           <div style="padding: 10px;">预约名单:</div>
           <div style="position: absolute;right:10px;top: 3px;">
@@ -61,6 +61,7 @@ import api from '../../api/collect'
                 tableData:[],
                 options:PROOPTION,
                 proName:'wdm',
+                successPWD: false,
                 value:'南京万达茂'
             }
         },
@@ -68,7 +69,15 @@ import api from '../../api/collect'
         created(){
             var vm = this;
           vm.setCharts();
-          vm.getTableInfo()
+          vm.getTableInfo();
+          var PWD = window.prompt("请输入密码","") ;
+          console.log(PWD)
+          vm.successPWD = PWD === "qwe123" ? true:false;
+          if(!vm.successPWD){
+              alert("密码错误");
+          }
+
+
         },
         methods: {
           selectChangeFun(v1,v2){
