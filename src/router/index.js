@@ -24,6 +24,10 @@ const wkxh = resolve => require(['@/components/wkxh/wkxh'], resolve);
 
 const jlxc = resolve => require(['@/components/jlxc/jlxc'], resolve);
 
+const yxjj = resolve => require(['@/components/YXJJ/YXJJ'], resolve);
+
+const smgc = resolve => require(['@/components/smgc/smgc'], resolve);
+
 export default new Router({
   /*mode: 'history',*/
   base: __dirname,
@@ -39,5 +43,7 @@ export default new Router({
     {path: '/hmme', name: 'hmme', component: hmme},
     {path: '/wkxh', name: 'wkxh', component: wkxh},
     {path: '/jlxc', name: 'jlxc', component: jlxc},
+    {path: '/yxjj', name: 'yxjj', component: yxjj},
+    {path: '/smgc', name: 'smgc', component: smgc},
   ]
 })
