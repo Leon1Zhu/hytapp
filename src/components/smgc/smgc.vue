@@ -15,7 +15,7 @@
     <el-input v-model="name" placeholder="姓名（必填）"></el-input>
     <el-input v-model="phone" placeholder="联系电话(必填)"></el-input>
     <el-button type="info" @click="addSubscribe">提交</el-button>
-    <el-button type="danger"><a style="color: #fff" href="tel:18936902132">致电售楼处预约</a></el-button>
+    <el-button type="danger"><a style="color: #fff" :href="'tel:'+mobile">致电售楼处预约</a></el-button>
   </div>
 </template>
 
@@ -35,7 +35,8 @@
         },
         phone:null,
         name:null,
-        zzPro:SMGCPRO
+        zzPro:SMGCPRO,
+        mobile: mobile
       }
     },
     components: {

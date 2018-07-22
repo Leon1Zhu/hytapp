@@ -17,7 +17,7 @@
       <el-input v-model="name" placeholder="姓名（必填）"></el-input>
       <el-input v-model="phone" placeholder="联系电话(必填)"></el-input>
       <el-button type="info" @click="addSubscribe">提交</el-button>
-      <el-button type="danger"><a style="color: #fff" href="tel:02558917591">致电售楼处预约</a></el-button>
+      <el-button type="danger"><a style="color: #fff" :href="'tel:'+telphone">致电售楼处预约</a></el-button>
       <p style="margin-top: 2%;text-align: center;">现在预约立享3万抵4万团购优惠</p>
     </div>
 </template>
@@ -38,6 +38,7 @@ import subscribeApi  from '../../api/collect'
               phone:null,
               name:null,
               wdmContent:WDMINTRODUCE,
+              telphone: telphone
             }
         },
         components: {

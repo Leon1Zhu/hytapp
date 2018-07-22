@@ -5,6 +5,9 @@
 global.SERVICEURL="http://106.15.90.228:9090"
 
 
+global.mobile = '18451416871';
+global.telphone = '02558917591';
+
 if(process.env.NODE_ENV=="production"){
   global.SERVICEURL="http://106.15.90.228:9090"
 }

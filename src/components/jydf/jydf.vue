@@ -16,7 +16,7 @@
     <el-input v-model="name" placeholder="姓名（必填）"></el-input>
     <el-input v-model="phone" placeholder="联系电话(必填)"></el-input>
     <el-button type="info" @click="addSubscribe">提交</el-button>
-    <el-button type="danger"><a style="color: #fff" href="tel:02558917591">致电售楼处预约</a></el-button>
+    <el-button type="danger"><a style="color: #fff" :href="'tel:'+telphone">致电售楼处预约</a></el-button>
   </div>
 </template>
 
@@ -36,7 +36,8 @@
         },
         phone:null,
         name:null,
-        zzPro:JYDFPRO
+        zzPro:JYDFPRO,
+        telphone: telphone,
       }
     },
     components: {
