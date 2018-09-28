@@ -12,7 +12,7 @@ const zzPro = resolve => require(['@/components/zhangzhou/zhangzhou'], resolve);
 
 const suning = resolve => require(['@/components/suning/suning'], resolve);
 
-
+const yxpro = resolve => require(['@/components/yx/yx'], resolve);
 
 const jydf = resolve => require(['@/components/jydf/jydf'], resolve);
 
@@ -39,5 +39,6 @@ export default new Router({
     {path: '/hmme', name: 'hmme', component: hmme},
     {path: '/wkxh', name: 'wkxh', component: wkxh},
     {path: '/jlxc', name: 'jlxc', component: jlxc},
+    {path: '/yxpro', name: 'yxpro', component: yxpro},
   ]
 })

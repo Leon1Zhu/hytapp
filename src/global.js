@@ -131,6 +131,17 @@ global.HMMEPRO = [
   }
 ]
 
+global.YXPRO = [
+  {
+    title:  '推荐理由',
+    content:[
+      "1.市中心核心地段，人民路商圈.",
+      "2.可自营可托管，托管10年，前5年保底8%，后5年保底9%，十年可130%回购.",
+      "3.招商百分百，入驻商家邵东家、炭膳富、木家小子、珍味屋、刘巧儿等。",
+    ]
+  }
+]
+
 
 global.PROOPTION=[{
     value: 'WDM',
@@ -143,7 +154,7 @@ global.PROOPTION=[{
   label: '苏宁紫金嘉悦'
 }, {
   value: 'YX',
-  label: '月星家居'
+  label: '大达美食城'
 },{
   value:"JYDF",
   label:"金域东方"
