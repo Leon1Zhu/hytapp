@@ -22,4 +22,13 @@
   .node-card {
     border: 1px solid #D3D3D3;
   }
+  .node-card-detail {
+    margin-top: 10px;
+    span {
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+      font-family: "PingFang SC";
+    }
+  }
 }

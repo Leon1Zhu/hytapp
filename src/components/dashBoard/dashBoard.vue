@@ -5,8 +5,17 @@
 <template>
 <div class="hyt-dashBoard">
   <div class="dashboard-top-content">
-    <node-card :data="allSubscribe"></node-card>
-    <node-card :data="weekSubscribe"></node-card>
+    <node-card :data="allSubscribe">
+      <div  class="card-content">
+        <div class="node-card-detail">手机预约<span>{{mobileCount}}</span>人</div>
+        <div class="node-card-detail">PC预约<span>{{PCCount}}</span>人</div>
+      </div>
+    </node-card>
+    <node-card :data="weekSubscribe">
+      <div  class="card-content">
+        <div class="node-card-detail">暂无详细数据</div>
+      </div>
+    </node-card>
   </div>
   <div id="main" style="min-height:200px;width: 100%;"></div>
 </div>
@@ -44,6 +53,8 @@ export default {
         type: '本周预约人数',
         sum: 0,
       },
+      mobileCount: 0,
+      PCCount: 0,
     };
   },
   components: {
@@ -66,6 +77,13 @@ export default {
   methods: {
     initData() {
       dashBoardApi.getDashBoardInfo().then((response) => {
+        response.data.allSubscribe.forEach((item) => {
+          if (item.origin === 'MOBILE') {
+            this.mobileCount ++;
+          } else {
+            this.PCCount++;
+          }
+        })
         this.allSubscribe.sum = response.data.allSubscribe.length;
       })
     },

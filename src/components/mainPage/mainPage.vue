@@ -45,7 +45,7 @@
     <Col :span="spanRight" class="main-content-span">
     <div class="layout-header">
       <Button type="text" @click="toggleClick">
-        <Icon type="navicon" size="32"></Icon>
+        <Icon type="md-menu" size="32"/>
       </Button>
       <div class="user-tool-bar">
 
