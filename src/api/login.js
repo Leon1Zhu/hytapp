@@ -1,6 +1,6 @@
 import api from 'axios';
 
-// 获取猜你喜欢房子
+// 登录接口
 const loginApi = '/api/login';
 
 const login = function (loginName, password) {
