@@ -60,6 +60,7 @@
 
 <script>
 import './login.scss';
+import loginApi from '../api/login';
 
 let timer;
 export default {
@@ -93,16 +94,15 @@ export default {
       }
       this.loading = true;
       loginApi.login(this.formValidate.name, this.formValidate.password).then((response) => {
-        this.$store.dispatch('setUserInfoAction', { data: response.data.data, remeberme: this.remberme});
-        this.checkIsDeployed();
-      }).catch(() => {
-        this.loading = false;
-      });
-    },
-
-    checkIsDeployed() {
-      loginApi.isDeploy().then((response) => {
-        this.pushRouter(response.data.data.is_deployed ? '/deployIndex' : '/noDeployPage', null);
+        // this.$store.dispatch('setUserInfoAction', { data: response.data.data, remeberme: this.remberme});
+        if (response.data) {
+          this.$store.commit('loginCommit', { data: response.data, remeberme: this.remberme})
+          this.$router.push({path: '/'});
+        } else {
+          this.$Notice.error({
+            desc: '用户或密码错误',
+          });
+        }
         this.loading = false;
       }).catch(() => {
         this.loading = false;

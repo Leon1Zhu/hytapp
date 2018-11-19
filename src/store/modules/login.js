@@ -5,7 +5,7 @@
 import * as types  from '../mutations-types'
 
 const  state = {
-  isLogin : false
+  isLogin : sessionStorage.getItem('isLogin') || localStorage.getItem('isLogin') || false,
 }
 
 
@@ -14,8 +14,14 @@ const getters = {
 }
 
 const mutations = {
-  loginCommit(state,flag){
-    state.isLogin = flag;
+  loginCommit(state,data){
+    if (data.data) {
+      sessionStorage.setItem('isLogin', true);
+    }
+
+    if (data.remberme) {
+      localStorage.setItem('isLogin', true);
+    }
   }
 }
 
