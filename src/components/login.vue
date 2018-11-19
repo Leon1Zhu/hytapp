@@ -1,0 +1,113 @@
+ <!--
+  @author zhuliang
+  @date 2018/10/8 下午6:20
+-->
+<template>
+  <section id="login">
+    <div class="logo-name-content">
+      <i class="manage-logo"></i>
+      <span class="manage-name">SkyManager</span>
+    </div>
+    <div class="login-content">
+      <div class="left-content">
+        <!--<figure class="circle1">-->
+          <!--<img src="../assets/img/circle.svg" />-->
+        <!--</figure>-->
+        <!--<figure class="cl1">-->
+          <!--<img  src="../assets/img/1cl.svg" />-->
+        <!--</figure>-->
+        <!--<figure class="cl2">-->
+          <!--<img  src="../assets/img/2cl.svg" />-->
+        <!--</figure>-->
+        <!--<figure class="circle2">-->
+          <!--<img src="../assets/img/circle.svg" />-->
+        <!--</figure>-->
+        <!--<figure class="cl3">-->
+          <!--<img  src="../assets/img/3cl.svg" />-->
+        <!--</figure>-->
+        <!--<figure class="circle3">-->
+          <!--<img src="../assets/img/circle3.svg" />-->
+        <!--</figure>-->
+        <!--&lt;!&ndash;<div class="login-bg" ></div>&ndash;&gt;-->
+        <!--<img  class="login-bg" src="../assets/img/qtlogin3.svg">-->
+      </div>
+      <div class="right-content">
+        <h1>用户登录</h1>
+        <Form ref="formValidate" :model="formValidate" >
+          <FormItem  prop="name" style="margin-bottom: 30px;">
+            <Input  prefix="ios-person-outline"  v-model="formValidate.name" placeholder="请输入用户名">
+            </Input>
+          </FormItem>
+
+          <FormItem  prop="password">
+            <Input   prefix="ios-lock-outline" v-model="formValidate.password" type="password" placeholder="请输入密码">
+            </Input>
+          </FormItem>
+        </Form>
+        <div class="login-operation">
+          <Checkbox label="记住我" class="remember-me" v-model="remberme">
+            <span>记住我</span>
+          </Checkbox>
+          <!--<div class="reset-password">-->
+            <!--重置密码-->
+          <!--</div>-->
+        </div>
+        <Button class="login-btn" type="primary" @click="login()" :loading="loading">登录</Button>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import './login.scss';
+
+let timer;
+export default {
+  name: 'login',
+  data() {
+    return {
+      formValidate: {
+        name: '',
+        password: '',
+      },
+      remberme: false,
+      loading: false,
+    };
+  },
+  components: {},
+  created() {},
+  mounted() {
+    document.onkeydown = (e) => {
+      if (e.keyCode === 13) {
+        this.login();
+      }
+    };
+  },
+  methods: {
+    login() {
+      if (!(this.formValidate.name && this.formValidate.password)) {
+        this.$Notice.error({
+          desc: '用户名或密码不能为空',
+        });
+        return;
+      }
+      this.loading = true;
+      loginApi.login(this.formValidate.name, this.formValidate.password).then((response) => {
+        this.$store.dispatch('setUserInfoAction', { data: response.data.data, remeberme: this.remberme});
+        this.checkIsDeployed();
+      }).catch(() => {
+        this.loading = false;
+      });
+    },
+
+    checkIsDeployed() {
+      loginApi.isDeploy().then((response) => {
+        this.pushRouter(response.data.data.is_deployed ? '/deployIndex' : '/noDeployPage', null);
+        this.loading = false;
+      }).catch(() => {
+        this.loading = false;
+      });
+    },
+  },
+};
+</script>
