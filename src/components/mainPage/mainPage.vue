@@ -19,7 +19,7 @@
               <span >{{childrenItem.menuName}}</span>
             </MenuItem>
           </Submenu>
-          <MenuItem :name="index" v-else>
+          <MenuItem :name="index" v-else @click.native="goPage(menuItem.linkHref)">
             <Icon  v-if="!ISNULL(menuItem.menuIcon)" :type="menuItem.menuIcon" />
             <span>{{menuItem.menuName}}</span>
           </MenuItem>
@@ -31,10 +31,17 @@
           <div >
             <Icon  v-if="!ISNULL(menuItem.menuIcon)" :type="menuItem.menuIcon" />
           </div>
-          <DropdownMenu slot="list">
+          <DropdownMenu slot="list"  v-if="menuItem.hasChild">
             <DropdownItem  v-for="(childrenItem,indexChildrenT) in menuItem.childMenuList" @click.native="goPage(childrenItem.linkHref)"  v-if="!childrenItem.needPower || $store.getters.getAccountType === '管理员'">
               <Icon  v-if="!ISNULL(childrenItem.menuIcon)" :type="childrenItem.menuIcon" />
               <span>{{childrenItem.menuName}}</span>
+            </DropdownItem>
+          </DropdownMenu>
+
+          <DropdownMenu slot="list"  v-else>
+            <DropdownItem  @click.native="goPage(menuItem.linkHref)" >
+              <Icon  v-if="!ISNULL(menuItem.menuIcon)" :type="menuItem.menuIcon" />
+              <span>{{menuItem.menuName}}</span>
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
@@ -48,8 +55,6 @@
         <Icon type="md-menu" size="32"/>
       </Button>
       <div class="user-tool-bar">
-
-
         <div class="user-info">
           <Dropdown>
             <a  href="javascript:void(0)">
@@ -68,7 +73,7 @@
 
         <div class="email-count">
           <Badge :count="17" overflow-count="999">
-            <Icon type="ios-bell-outline" size="26"></Icon>
+            <Icon type="ios-notifications-outline" size="26"/>
           </Badge>
         </div>
 
@@ -306,7 +311,7 @@
             }
           }
           .email-count{
-            padding: 6px 15px;
+            padding: 0px 15px;
           }
 
         }
@@ -361,7 +366,9 @@
       .ivu-dropdown-item{
         font-size:14px!important;
       }
-
+      .ivu-badge {
+        display: inline;
+      }
     }
 
 </style>

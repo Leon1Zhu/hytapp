@@ -1,4 +1,4 @@
 module.exports = {
   NODE_ENV: '"production"',
-  host: '"http://localhost:8888"',
+  host: '"http://www.wlmfang.com:8888"',
 }

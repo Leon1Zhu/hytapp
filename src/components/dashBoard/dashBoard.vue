@@ -25,20 +25,8 @@
 import './dashBoard.scss';
 import dashBoardApi from '../../api/dashBoard';
 import nodeCard from '../nodeCard/nodeCard';
-const moment = require('moment');
 let timer;
 
-// 获取上一周的开始结束时间
-function geWeekDays (type) {
-  debugger
-  let date = []
-  let weekOfday = parseInt(moment().format('d')) // 计算今天是这周第几天  周日为一周中的第一天
-  let start = moment().subtract(weekOfday + (7 * type), 'days').format('YYYY-MM-DD') // 周一日期
-  let end = moment().subtract(weekOfday + (1 + 7 * (type - 1)), 'days').format('YYYY-MM-DD') // 周日日期
-  date.push(start)
-  date.push(end)
-  return date
-}
 
 export default {
   name: 'dash-board',
@@ -85,6 +73,7 @@ export default {
           }
         })
         this.allSubscribe.sum = response.data.allSubscribe.length;
+        this.weekSubscribe.sum = response.data.weekSubscribe.length;
       })
     },
     setCharts() {
@@ -96,9 +85,9 @@ export default {
         var seriesData = [];
         console.log(responsedata)
         responsedata.forEach((item) => {
-          data.push(moment(item.order_time).format("YYYY-MM-DD"))
+          data.push(this.moment(item.order_time).format("YYYY-MM-DD"))
           seriesData.push(item.usercount)
-          dataName.push(moment(item.order_time).format("YYYY-MM-DD") + "预约人数")
+          dataName.push(this.moment(item.order_time).format("YYYY-MM-DD") + "预约人数")
         })
 
         // 基于准备好的dom，初始化echarts图表

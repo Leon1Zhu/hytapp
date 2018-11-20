@@ -36,4 +36,6 @@ Vue.prototype.ISNULL = function(val) {
   else return false;
 };
 
+Vue.prototype.moment = require('moment');
+
 

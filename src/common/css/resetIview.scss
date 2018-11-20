@@ -54,6 +54,9 @@
   background: $menuSelectFontColor;
 }
 
+.ivu-select-item-selected {
+  color: white;
+}
 .ivu-btn-ghost:hover, .ivu-select-selection:hover {
   opacity: .7;
 }
@@ -104,13 +107,17 @@
 .ivu-page-item:hover{
   border-color: $menuSelectFontColor !important;
 }
+//
+//.ivu-page-item:hover a,.ivu-page-item-jump-prev a,.ivu-page-item-jump-next a,.ivu-cascader-menu .ivu-cascader-menu-item-active{
+//  color: $menuSelectFontColor;
+//}
+//.ivu-page-item-active {
+//  background-color: $menuSelectFontColor !important;
+//  border-color: $menuSelectFontColor !important;
+//}
 
-.ivu-page-item:hover a,.ivu-page-item-jump-prev a,.ivu-page-item-jump-next a,.ivu-cascader-menu .ivu-cascader-menu-item-active{
+.ivu-page-item-active a {
   color: $menuSelectFontColor;
-}
-.ivu-page-item-active {
-  background-color: $menuSelectFontColor !important;
-  border-color: $menuSelectFontColor !important;
 }
 
 .ivu-radio-inner:after {
