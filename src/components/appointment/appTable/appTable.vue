@@ -33,6 +33,9 @@ export default {
         {
           title: '联系电话',
           key: 'personTel',
+          render: (h, params) => {
+            return h('div', this.$decrypt(params.row.personTel));
+          },
         },
         {
           title: '预约楼盘',

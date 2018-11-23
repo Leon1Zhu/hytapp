@@ -10,26 +10,6 @@
     </div>
     <div class="login-content">
       <div class="left-content">
-        <!--<figure class="circle1">-->
-          <!--<img src="../assets/img/circle.svg" />-->
-        <!--</figure>-->
-        <!--<figure class="cl1">-->
-          <!--<img  src="../assets/img/1cl.svg" />-->
-        <!--</figure>-->
-        <!--<figure class="cl2">-->
-          <!--<img  src="../assets/img/2cl.svg" />-->
-        <!--</figure>-->
-        <!--<figure class="circle2">-->
-          <!--<img src="../assets/img/circle.svg" />-->
-        <!--</figure>-->
-        <!--<figure class="cl3">-->
-          <!--<img  src="../assets/img/3cl.svg" />-->
-        <!--</figure>-->
-        <!--<figure class="circle3">-->
-          <!--<img src="../assets/img/circle3.svg" />-->
-        <!--</figure>-->
-        <!--&lt;!&ndash;<div class="login-bg" ></div>&ndash;&gt;-->
-        <!--<img  class="login-bg" src="../assets/img/qtlogin3.svg">-->
       </div>
       <div class="right-content">
         <h1>用户登录</h1>
