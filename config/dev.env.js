@@ -3,5 +3,5 @@ var prodEnv = require('./prod.env')
 
 module.exports = merge(prodEnv, {
   NODE_ENV: '"development"',
-  host: '"http://localhost:8888"',
+  host: '"http://www.wlmfang.com:8888"',
 })

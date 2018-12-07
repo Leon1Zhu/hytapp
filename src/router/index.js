@@ -6,8 +6,6 @@ Vue.use(Router)
 
 const notFound = resolve => require(['@/components/404'], resolve);
 const loginPage = resolve => require(['@/components/login.vue'], resolve);
-const managePage = resolve => require(['@/components/ManagePage.vue'], resolve);
-
 export default new Router({
   /*mode: 'history',*/
   base: __dirname,
