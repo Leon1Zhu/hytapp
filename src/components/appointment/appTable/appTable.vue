@@ -55,7 +55,7 @@ export default {
           title: '预约时间',
           render: (h, params) => {
 
-            return h('div', this.moment(params.row.orderTime).format('YYYY-MM-DD'));
+            return h('div', this.moment(params.row.orderTime).format('YYYY-MM-DD HH:mm:ss'));
           },
         },
       ],
