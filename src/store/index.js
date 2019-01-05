@@ -7,6 +7,8 @@ import Vuex from 'vuex'
 import * as actions from './actions'
 import * as getters from './getters'
 import login from './modules/login'
+import loginAndMain from './modules/loginAndMain'
+import salesAndReturn from './modules/salesAndReturn'
 
 Vue.use(Vuex)
 const debug = process.env.NODE_ENV !== 'production'
@@ -14,7 +16,9 @@ export default new Vuex.Store({
   actions,
   getters,
   modules: {
-    login
+    login,
+    loginAndMain,
+    salesAndReturn,
   },
   strict: debug,
 })

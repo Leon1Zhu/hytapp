@@ -1,0 +1,28 @@
+/**
+  @author zhuliang
+  @date 2018/11/1 7:45 PM
+*/
+
+.no-data-com-content {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  height: 100%;
+  margin-top: 5%;
+  .img-content {
+    width: 20%;
+    max-width: 160px;
+    position: relative;
+    margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  p {
+    font-size: 14px;
+    color: #6282AB;
+  }
+}

@@ -1,0 +1,34 @@
+/**
+  @author zhuliang
+  @date 2018/11/19 12:48 PM
+*/
+
+.hyt-dashBoard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  .dashboard-top-content {
+    flex: 1;
+    display: flex;
+  }
+  #main {
+    flex: 2;
+  }
+  .node-card:not(:last-child) {
+    margin-right: 15px;
+  }
+  .node-card {
+    border: 1px solid #D3D3D3;
+  }
+  .node-card-detail {
+    margin-top: 10px;
+    span {
+      font-size: 16px;
+      font-weight: bold;
+      color: black;
+      font-family: "PingFang SC";
+    }
+  }
+}

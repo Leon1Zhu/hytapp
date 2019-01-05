@@ -2,11 +2,10 @@
  * Created by zhuliang on 2017/3/6.
  * 登陆的相关数据的store
  */
-import loginFun from '../../api/newsPaperPages'
 import * as types  from '../mutations-types'
 
 const  state = {
-  isLogin : false
+  isLogin : sessionStorage.getItem('isLogin') || localStorage.getItem('isLogin') || false,
 }
 
 
@@ -15,8 +14,14 @@ const getters = {
 }
 
 const mutations = {
-  [types.LOGIN_STATUS](state,flag){
-    state.isLogin = flag;
+  loginCommit(state,data){
+    if (data.data) {
+      sessionStorage.setItem('isLogin', true);
+    }
+
+    if (data.remberme) {
+      localStorage.setItem('isLogin', true);
+    }
   }
 }
 

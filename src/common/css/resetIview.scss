@@ -1,0 +1,206 @@
+@import "./globalscss";
+
+.ivu-menu.ivu-menu-dark.ivu-menu-vertical li {
+  text-align: center;
+}
+
+.ivu-menu-submenum, .ivu-menu {
+  color: $menuFontColor;
+}
+
+.ivu-menu-submenu.ivu-menu-opened .ivu-menu-submenu-title, .ivu-menu-dark.ivu-menu-vertical .ivu-menu-item-active:not(.ivu-menu-submenu), .ivu-menu-item.ivu-menu-item-selected {
+  background: $menuSelectColror !important;
+  color: $menuSelectFontColor !important;
+}
+
+.ivu-menu-vertical .ivu-menu-opened .ivu-menu-item:hover, .ivu-menu-vertical .ivu-menu-submenu .ivu-menu-item-active:hover, .ivu-menu-submenu .ivu-menu-submenu-title:hover, .ivu-menu-item:hover {
+  background: $menuHoverBackgroundColor !important;
+  color: $menuSelectFontColor !important;
+}
+
+.layout-menu-left.ivu-col {
+  /* background: $menuBackgroundColor!important;
+   background: linear-gradient(to right,$menuStartColor,$menuEndColor)!important;*/
+  background: $menuBackgroundColor !important;
+}
+
+.ivu-menu.ivu-menu-vertical {
+  background: transparent !important;
+}
+
+.ivu-menu-vertical .ivu-menu-submenu-title-icon {
+  top: 0px;
+}
+
+.ivu-menu.ivu-menu-vertical:after {
+  display: none;
+}
+.ivu-select-selection{
+  border-color: rgb(211,222,224)!important;
+  box-shadow: none!important;
+}
+.ivu-btn-ghost, .ivu-select-selection:hover,.ivu-select-selection:hover .ivu-icon-arrow-down-b.ivu-select-arrow {
+  border-color: $menuSelectFontColor !important;
+  color: $menuSelectFontColor !important;
+  box-shadow: none !important;
+}
+
+.ivu-input:focus, .ivu-input:hover, .ivu-input-number:hover, .ivu-input-number:focus, .ivu-input-number-focused {
+  border-color: $menuSelectFontColor;
+  box-shadow: 0 0 0 1px rgba(101, 206, 167, .2);
+}
+
+.ivu-select-item-selected, .ivu-select-item-selected:hover {
+  background: $menuSelectFontColor;
+}
+
+.ivu-select-item-selected {
+  color: white;
+}
+.ivu-btn-ghost:hover, .ivu-select-selection:hover {
+  opacity: .7;
+}
+
+.ivu-switch-checked {
+   border-color: $menuSelectFontColor;
+   background-color: $menuSelectFontColor;
+}
+
+.ivu-btn-primary {
+  background: $menuSelectFontColor;
+  border-color: $menuSelectFontColor;
+}
+
+.ivu-btn-circle.ivu-btn-icon-only {
+  width: 30px;
+  height: 30px;
+}
+
+.ivu-btn-primary:hover {
+  border-color: $btnInputHoverBgColor;
+  background: $btnInputHoverBgColor;
+  box-shadow: none;
+}
+
+.vertical-center-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ivu-modal {
+    top: 0;
+  }
+}
+
+.ivu-date-picker-cells-cell-selected em, .ivu-table-header table thead tr th {
+  background: $menuSelectFontColor;
+}
+
+.ivu-table-header table thead tr th {
+  color: white;
+}
+
+.ivu-date-picker-cells-cell-selected em, .ivu-table-header table thead tr th {
+  background: $menuSelectFontColor;
+}
+
+.ivu-page-item:hover{
+  border-color: $menuSelectFontColor !important;
+}
+//
+//.ivu-page-item:hover a,.ivu-page-item-jump-prev a,.ivu-page-item-jump-next a,.ivu-cascader-menu .ivu-cascader-menu-item-active{
+//  color: $menuSelectFontColor;
+//}
+//.ivu-page-item-active {
+//  background-color: $menuSelectFontColor !important;
+//  border-color: $menuSelectFontColor !important;
+//}
+
+.ivu-page-item-active a {
+  color: $menuSelectFontColor;
+}
+
+.ivu-radio-inner:after {
+  background-color: $menuSelectFontColor !important;
+}
+
+.ivu-radio-checked .ivu-radio-inner {
+  border-color: $menuSelectFontColor !important;
+}
+
+.ivu-page-prev:hover,.ivu-page-next:hover,.ivu-page-prev:hover a,.ivu-page-next:hover a{
+  border-color: $menuSelectFontColor;
+  color: $menuSelectFontColor;
+}
+.ivu-table-border td, .ivu-table-border th{
+  text-align: center;
+}
+.ivu-date-picker-cells-cell:hover em{
+  background: $menuSelectFontColor;
+}
+.ivu-form-label-left .ivu-form-item-label{
+  font-size:$fontSize;
+}
+.ivu-date-picker-header-label:hover{
+  color: $menuSelectFontColor
+}
+.ivu-spin{
+  color: $menuSelectFontColor;
+  .ivu-spin-dot{
+    background-color: $menuSelectFontColor;
+  }
+}
+.ivu-spin-large .ivu-spin-dot{
+  width: 50px;
+  height: 50px;
+}
+
+.menu-list-content{
+  .ivu-tag{
+    .ivu-tag-dot-inner{
+      display: none;
+    }
+  }
+
+  .ivu-tag.activeTag{
+    background: $menuSelectFontColor!important;
+    .ivu-icon.ivu-icon-ios-close-empty:before{
+      color: white;
+    }
+    .ivu-tag-text{
+      color: white;
+    }
+  }
+}
+
+.ivu-btn:focus{
+  box-shadow: none;
+}
+
+.ivu-cascader .ivu-select-dropdown{
+  text-align: left;
+}
+
+.ivu-table-sort i{
+  color: white;
+}
+
+
+.ivu-table-sort i:hover,.ivu-table-sort i.on{
+  color: #bbbec4;
+}
+
+.ivu-modal-mask{
+  z-index:1001;
+}
+
+.ivu-modal-wrap{
+  z-index:20141226;
+}
+
+.ivu-tag-text{
+  pointer-events: none;
+}
+.ivu-modal-confirm-footer .ivu-btn-text.ivu-btn-large:hover{
+  color: $menuSelectFontColor;
+}

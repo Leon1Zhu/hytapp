@@ -1,0 +1,67 @@
+//此scss用来定义全局变量以及全局的scss方法
+
+//菜单文本颜色
+$menuFontColor:rgba(255,255,255,.8)!default;
+
+//菜单选中文本颜色
+$menuSelectFontColor: #06b9a5!default;
+
+//菜单选中文本框的背景色
+$menuSelectColror:rgba(0,0,0,.3)!default;
+
+//菜单hover背景色
+$menuHoverBackgroundColor:rgba(0,0,0,.2)!default;
+
+//菜单背景色
+$menuBackgroundColor:#3a4658!default;
+
+//按钮输入框hover改变色
+$btnInputHoverBgColor:rgba(11,176,155,0.8)!default;
+
+//编辑表单的提示文字颜色
+$formInputLableFontColor:grey!default;
+
+//编辑表单的分隔线颜色
+$formLabelBorderBottomColor:#f5f4f5!default;
+
+//字体大小
+$fontSize:14px!default;
+
+//菜单背景渐变色
+$menuStartColor:#465f5c!default;
+$menuEndColor:rgba(71,130,124,1)!default;
+
+//drawer左右padding
+$drawerPadding:5px!default;
+
+
+//按钮下移动画
+@keyframes  moveDown{
+  form{
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(5px);
+  }
+
+}
+
+//按钮上移动画
+@keyframes  moveUp{
+  form{
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+
+}
+
+
+
+
+
