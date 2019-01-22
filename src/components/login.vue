@@ -6,7 +6,7 @@
   <section id="login">
     <div class="logo-name-content">
       <i class="manage-logo"></i>
-      <span class="manage-name">华云庭房地产</span>
+      <span class="manage-name">云锋新房</span>
     </div>
     <div class="login-content">
       <div class="left-content">
