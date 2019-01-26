@@ -1,73 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40c737cb-b697-4663-bf56-89d78807f981" name="Default" comment="">
+    <list default="true" id="40c737cb-b697-4663-bf56-89d78807f981" name="Default" comment="名称替换">
+      <change afterPath="$PROJECT_DIR$/src/api/houseManage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hytapp/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/css/app.4944ff8397bb50a0b61c183ce861d727.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/css/app.4944ff8397bb50a0b61c183ce861d727.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/fonts/element-icons.b02bdc1.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/JYDF1.e58fe2c.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/JYDF2.f9bb583.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/JYDF3.800efa3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/JYDF4.354c2da.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/JYDF5.724c87d.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/hmme1.d42c2eb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/hmme2.bab28ee.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/hmme3.30ed3dd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/hmme4.de2ab17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/hmme5.4cebd6a.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/jlxc1.2cae59d.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/jlxc2.bb24e06.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/jlxc3.69fb10d.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/pic-1.f699992.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/pic-2.a1acab4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/pic-3.7ba2d83.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/pic-4.8e4e0cf.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/pic-5.6209081.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/smgc1.37cbc04.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/smgc2.405bf14.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/smgc3.847e9f6.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/suning1.016c88b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/suning2.a95cc33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/suning3.b228227.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/suning5.7a1065e.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/wkxh1.9b6d64f.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/wkxh2.fcffbcb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/wkxh3.cfae0b6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/yxjj1.a3f4b64.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/yyjj2.efafa2d.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/zz1.d0537d5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/zz2.988033b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/img/zz3.5187ab6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/0.ea831b9d61748ade27dc.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/0.ea831b9d61748ade27dc.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/1.6ebf6b9a7451c58efc8c.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/1.6ebf6b9a7451c58efc8c.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/10.2bc65893d57ce9cfc5d9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/10.2bc65893d57ce9cfc5d9.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/11.2abbb988dc37f5eb34c2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/11.2abbb988dc37f5eb34c2.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/2.63e6568f24bf124e8297.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/2.63e6568f24bf124e8297.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/3.4fe92d4313199219f8b3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/3.4fe92d4313199219f8b3.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/4.a15c3ed507d7943fe745.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/4.a15c3ed507d7943fe745.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/5.a93cbd279821782548be.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/5.a93cbd279821782548be.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/6.235177f68bc5dfc6dc45.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/6.235177f68bc5dfc6dc45.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/7.dfade177942e9f4b519f.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/7.dfade177942e9f4b519f.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/9.0519f75e69edfe901724.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/9.0519f75e69edfe901724.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/app.e4e159510cb64090dc2b.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/app.e4e159510cb64090dc2b.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/vendor.d1d05b5301e7aea378c9.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/hytapp/static/js/vendor.d1d05b5301e7aea378c9.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/prod.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/mainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/mainPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,59 +32,72 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/YXJJ/YXJJ.vue">
+        <entry file="file://$PROJECT_DIR$/config/prod.env.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-              <folding>
-                <element signature="e#892#930#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/mainPage/mainPage.vue">
+        <entry file="file://$PROJECT_DIR$/src/api/appointment.js">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main.js">
+        <entry file="file://$PROJECT_DIR$/src/api/dashBoard.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/telCord.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
+            <state>
+              <caret selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
+        <entry file="file://$PROJECT_DIR$/src/api/houseManage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+            <state relative-caret-position="195">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/login.vue">
+        <entry file="file://$PROJECT_DIR$/src/router/mainPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+            <state relative-caret-position="181">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/smgc/smgc.vue">
+        <entry file="file://$PROJECT_DIR$/config/index.js">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/dev.env.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="72" selection-start-line="17" selection-start-column="72" selection-end-line="17" selection-end-column="72" />
+            <state relative-caret-position="75">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="586">
+              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
               <folding>
-                <element signature="e#1017#1055#0" expanded="true" />
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,6 +110,7 @@
       <list>
         <option value="Vue File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -185,6 +138,7 @@
       <find>YX</find>
       <find>wdxh</find>
       <find>华云庭</find>
+      <find>wlmfang</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/build</dir>
@@ -197,10 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/NanJingWDM/ManagePage.scss" />
-        <option value="$PROJECT_DIR$/.babelrc" />
-        <option value="$PROJECT_DIR$/src/globalFun.js" />
-        <option value="$PROJECT_DIR$/src/filter.js" />
         <option value="$PROJECT_DIR$/src/components/aboutPaper/mainPage.scss" />
         <option value="$PROJECT_DIR$/src/components/aboutPaper/mainPage.vue" />
         <option value="$PROJECT_DIR$/src/api/collect.js" />
@@ -248,14 +198,17 @@
         <option value="$PROJECT_DIR$/src/components/YXJJ/YXJJ.vue" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/components/login.vue" />
+        <option value="$PROJECT_DIR$/config/prod.env.js" />
+        <option value="$PROJECT_DIR$/config/dev.env.js" />
+        <option value="$PROJECT_DIR$/src/api/houseManage.js" />
+        <option value="$PROJECT_DIR$/src/router/mainPage.js" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-56" />
-    <option name="y" value="566" />
-    <option name="width" value="1920" />
-    <option name="height" value="1057" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="961" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -263,12 +216,19 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
@@ -286,18 +246,34 @@
               <item name="hytapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="router" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548126141957" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548473469501" />
     <property name="editor.config.accepted" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -579,7 +555,8 @@
       <workItem from="1546698234211" duration="67000" />
       <workItem from="1546699754353" duration="146000" />
       <workItem from="1546747219277" duration="1029000" />
-      <workItem from="1548126314424" duration="492000" />
+      <workItem from="1548126314424" duration="615000" />
+      <workItem from="1548470267724" duration="2369000" />
     </task>
     <task id="LOCAL-00001" summary="测试版本">
       <created>1496908118056</created>
@@ -686,16 +663,23 @@
       <option name="project" value="LOCAL" />
       <updated>1532271277012</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="名称替换">
+      <created>1548126966455</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1548126966455</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123649000" />
+    <option name="totallyTimeSpent" value="126141000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="76" width="1920" height="1057" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="961" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8766234" visible="true" weight="0.38391906" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8766234" visible="true" weight="0.3882784" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.12337662" side_tool="true" weight="0.2525338" />
@@ -703,8 +687,6 @@
       <window_info id="Designer" order="5" />
       <window_info id="UI Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32746115" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -712,11 +694,12 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2373057" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23705408" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32906976" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.31088084" />
       <window_info anchor="bottom" id="Messages" order="10" />
-      <window_info anchor="right" id="Maven" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -727,6 +710,7 @@
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Maven" order="10" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -741,7 +725,8 @@
     <MESSAGE value="电话修改，增加统计" />
     <MESSAGE value="世贸广场" />
     <MESSAGE value="号码格式化替换" />
-    <option name="LAST_COMMIT_MESSAGE" value="号码格式化替换" />
+    <MESSAGE value="名称替换" />
+    <option name="LAST_COMMIT_MESSAGE" value="名称替换" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -755,13 +740,8 @@
     <entry file="file://$PROJECT_DIR$/src/components/NanJingWDM/NanJingWDM.scss" />
     <entry file="file://$PROJECT_DIR$/src/components/wkxh/wkxh.vue" />
     <entry file="file://$PROJECT_DIR$/src/components/suning/suning.scss" />
-    <entry file="file://$PROJECT_DIR$/src/global.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/hytapp/static/js/9.0519f75e69edfe901724.js.map" />
+    <entry file="file://$PROJECT_DIR$/hytapp/static/js/9.0519f75e69edfe901724.js" />
     <entry file="file://$PROJECT_DIR$/src/components/YXJJ/YXJJ.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -775,6 +755,13 @@
     <entry file="file://$PROJECT_DIR$/src/components/mainPage/mainPage.vue">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/smgc/smgc.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -785,9 +772,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/menu.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="586">
           <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
           <folding>
             <element signature="e#0#22#0" expanded="true" />
@@ -795,32 +792,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/src/global.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        <state relative-caret-position="180">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hytapp/static/js/9.0519f75e69edfe901724.js.map">
+    <entry file="file://$PROJECT_DIR$/config/index.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/dev.env.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret column="76222" selection-start-column="76222" selection-end-column="76222" />
+        <state relative-caret-position="75">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
         </state>
       </provider>
-      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/hytapp/static/js/9.0519f75e69edfe901724.js">
+    <entry file="file://$PROJECT_DIR$/config/prod.env.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/appointment.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/dashBoard.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/telCord.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="69464" selection-start-column="69464" selection-end-column="69464" />
+          <caret selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/login.vue">
+    <entry file="file://$PROJECT_DIR$/src/api/houseManage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        <state relative-caret-position="195">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/mainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
         </state>
       </provider>
     </entry>
