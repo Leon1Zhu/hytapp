@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="40c737cb-b697-4663-bf56-89d78807f981" name="Default" comment="名称替换">
-      <change afterPath="$PROJECT_DIR$/src/api/houseManage.js" afterDir="false" />
+    <list default="true" id="40c737cb-b697-4663-bf56-89d78807f981" name="Default" comment="增加项目管理">
+      <change afterPath="$PROJECT_DIR$/src/common/css/aliIcon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/houseManage/manageTable/manageTable.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/houseManage/manageTable/manageTable.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/houseTypeItem/houseTypeItem.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/houseTypeItem/houseTypeItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/tableExpand.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/dev.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/dev.env.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/prod.env.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/prod.env.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/houseManage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/houseManage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/houseInfoManage/houseInfoManage.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/houseInfoManage/houseInfoManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/tableExpand.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/houseManage/houseManage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/houseManage/houseManage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/mainPage/mainPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mainPage/mainPage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/router/mainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/mainPage.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,38 +35,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/global.js">
+        <entry file="file://$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/tableExpand.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+              <caret line="12" column="105" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="105" />
+              <folding>
+                <element signature="e#913#941#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/prod.env.js">
+        <entry file="file://$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/houseTypeItem/houseTypeItem.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/api/appointment.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/api/dashBoard.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/api/telCord.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="18" />
+            <state relative-caret-position="105">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -62,31 +58,51 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/api/houseManage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="165">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/houseManage/manageTable/manageTable.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/router/mainPage.js">
+        <entry file="file://$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/houseTypeItem/houseTypeItem.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="188">
+              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/tableExpand.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="443">
+              <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/dev.env.js">
+        <entry file="file://$PROJECT_DIR$/src/interceptor/httpInterceptors.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            <state relative-caret-position="-65" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/menu.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -94,11 +110,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
+            <state relative-caret-position="615">
+              <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/login.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -109,15 +134,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Vue File" />
-        <option value="SCSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="Vue Single File Component" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>process</find>
-      <find>pic-6</find>
       <find>line</find>
       <find>sections</find>
       <find>SERVICEURL</find>
@@ -139,10 +164,20 @@
       <find>wdxh</find>
       <find>华云庭</find>
       <find>wlmfang</find>
+      <find>table-content</find>
+      <find>background: #06b9a5</find>
+      <find>showImageList2</find>
+      <find>imageLimit</find>
+      <find>menuList</find>
+      <find>noti</find>
+      <find>house-imgs-content</find>
+      <find>house-type-content</find>
+      <find>img-top</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/build</dir>
       <dir>$PROJECT_DIR$</dir>
+      <dir>$PROJECT_DIR$/src/components</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -151,18 +186,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/aboutPaper/mainPage.scss" />
-        <option value="$PROJECT_DIR$/src/components/aboutPaper/mainPage.vue" />
-        <option value="$PROJECT_DIR$/src/api/collect.js" />
-        <option value="$PROJECT_DIR$/src/components/zhangzhou/zhangzhou.scss" />
-        <option value="$PROJECT_DIR$/src/components/NanJingWDM/introduce/introduce.vue" />
-        <option value="$PROJECT_DIR$/src/components/NanJingWDM/introduce/introduce.scss" />
-        <option value="$PROJECT_DIR$/src/main.js" />
-        <option value="$PROJECT_DIR$/src/components/longhu/longhu.scss" />
-        <option value="$PROJECT_DIR$/src/components/suning/suning.scss" />
-        <option value="$PROJECT_DIR$/src/components/lch/lch.scss" />
-        <option value="$PROJECT_DIR$/hytapp/static/js/0.60e68b586fd045023ae6.js" />
-        <option value="$PROJECT_DIR$/src/components/yckinmaQ/yckinmaQ.scss" />
         <option value="$PROJECT_DIR$/src/components/yx/yx.vue" />
         <option value="$PROJECT_DIR$/src/components/wdBachelorPad/wdBachelorPad.scss" />
         <option value="$PROJECT_DIR$/src/components/rtsc/rtsc.scss" />
@@ -198,15 +221,28 @@
         <option value="$PROJECT_DIR$/src/components/YXJJ/YXJJ.vue" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/components/login.vue" />
-        <option value="$PROJECT_DIR$/config/prod.env.js" />
-        <option value="$PROJECT_DIR$/config/dev.env.js" />
-        <option value="$PROJECT_DIR$/src/api/houseManage.js" />
+        <option value="$PROJECT_DIR$/src/components/houseManage/houseManage.scss" />
         <option value="$PROJECT_DIR$/src/router/mainPage.js" />
+        <option value="$PROJECT_DIR$/src/menu.js" />
+        <option value="$PROJECT_DIR$/config/dev.env.js" />
+        <option value="$PROJECT_DIR$/config/prod.env.js" />
+        <option value="$PROJECT_DIR$/src/common/css/aliIcon.css" />
+        <option value="$PROJECT_DIR$/src/components/houseManage/manageTable/manageTable.scss" />
+        <option value="$PROJECT_DIR$/src/components/houseManage/houseManage.vue" />
+        <option value="$PROJECT_DIR$/src/components/houseManage/manageTable/manageTable.vue" />
+        <option value="$PROJECT_DIR$/src/main.js" />
+        <option value="$PROJECT_DIR$/src/api/houseManage.js" />
+        <option value="$PROJECT_DIR$/src/components/mainPage/mainPage.vue" />
+        <option value="$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/houseTypeItem/houseTypeItem.scss" />
+        <option value="$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/tableExpand.vue" />
+        <option value="$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/tableExpand.scss" />
+        <option value="$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/houseTypeItem/houseTypeItem.vue" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="73" />
+    <option name="y" value="56" />
     <option name="width" value="1680" />
     <option name="height" value="961" />
   </component>
@@ -216,7 +252,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -256,24 +291,83 @@
               <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="hytapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="hytapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="houseManage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="houseManage" type="462c0819:PsiDirectoryNode" />
+              <item name="manageTable" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="houseManage" type="462c0819:PsiDirectoryNode" />
+              <item name="manageTable" type="462c0819:PsiDirectoryNode" />
+              <item name="tableExpand" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="houseManage" type="462c0819:PsiDirectoryNode" />
+              <item name="manageTable" type="462c0819:PsiDirectoryNode" />
+              <item name="tableExpand" type="462c0819:PsiDirectoryNode" />
+              <item name="houseTypeItem" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hytapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hytapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548473469501" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549988700535" />
     <property name="editor.config.accepted" value="true" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
@@ -281,25 +375,26 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets/smgc" />
-      <recent name="$PROJECT_DIR$/src/assets/YXJJ" />
-      <recent name="$PROJECT_DIR$/src/assets/wkxh" />
-      <recent name="$PROJECT_DIR$/src/assets/jlxc" />
-      <recent name="$PROJECT_DIR$/hytapp/static/css/static" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/smgc" />
       <recent name="$PROJECT_DIR$/src/components/jydf2" />
       <recent name="$PROJECT_DIR$/src/components/jydf1" />
       <recent name="$PROJECT_DIR$/src/components/JYDF" />
       <recent name="$PROJECT_DIR$/src/components/rtsc" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/assets/smgc" />
+      <recent name="$PROJECT_DIR$/src/assets/YXJJ" />
+      <recent name="$PROJECT_DIR$/src/assets/wkxh" />
+      <recent name="$PROJECT_DIR$/src/assets/jlxc" />
+      <recent name="$PROJECT_DIR$/hytapp/static/css/static" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -556,7 +651,8 @@
       <workItem from="1546699754353" duration="146000" />
       <workItem from="1546747219277" duration="1029000" />
       <workItem from="1548126314424" duration="615000" />
-      <workItem from="1548470267724" duration="2369000" />
+      <workItem from="1548470267724" duration="11475000" />
+      <workItem from="1549947013123" duration="9002000" />
     </task>
     <task id="LOCAL-00001" summary="测试版本">
       <created>1496908118056</created>
@@ -670,16 +766,24 @@
       <option name="project" value="LOCAL" />
       <updated>1548126966455</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="增加项目管理">
+      <created>1548473489425</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1548473489425</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126141000" />
+    <option name="totallyTimeSpent" value="144249000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="961" extended-state="6" />
+    <frame x="73" y="56" width="1680" height="961" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8766234" visible="true" weight="0.3882784" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8766234" visible="true" weight="0.32783884" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.12337662" side_tool="true" weight="0.2525338" />
@@ -688,13 +792,13 @@
       <window_info id="UI Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32746115" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32681242" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.23705408" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.23705408" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" weight="0.32906976" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.31088084" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -726,7 +830,8 @@
     <MESSAGE value="世贸广场" />
     <MESSAGE value="号码格式化替换" />
     <MESSAGE value="名称替换" />
-    <option name="LAST_COMMIT_MESSAGE" value="名称替换" />
+    <MESSAGE value="增加项目管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加项目管理" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -752,9 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/mainPage/mainPage.vue">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -772,26 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="36" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/menu.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/global.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -802,17 +884,87 @@
     <entry file="file://$PROJECT_DIR$/config/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/api/telCord.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/router/mainPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/houseInfoManage/houseInfoManage.vue" />
+    <entry file="file://$PROJECT_DIR$/src/components/appointment/appointment.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/appointment/appTable/appTable.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/appointment/appTable/appTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="21" selection-start-line="21" selection-end-line="21" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/css/globalscss.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config/dev.env.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        <state relative-caret-position="90">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/prod.env.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/common/css/aliIcon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="9" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="9" />
+          <folding>
+            <element signature="e#251#5965#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/houseManage/houseManage.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/houseManage/houseManage.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="42" column="9" lean-forward="true" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#alienUpload#0;n#section#0;n#template#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/houseManage/manageTable/manageTable.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+          <folding>
+            <element signature="e#480#508#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -822,24 +974,87 @@
     <entry file="file://$PROJECT_DIR$/src/api/dashBoard.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/telCord.js">
+    <entry file="file://$PROJECT_DIR$/src/api/login.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/mainPage/mainPage.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" />
+        <state relative-caret-position="182">
+          <caret line="16" column="108" selection-start-line="16" selection-start-column="108" selection-end-line="16" selection-end-column="108" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/menu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="69" column="8" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="31" lean-forward="true" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/interceptor/httpInterceptors.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-65" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/api/houseManage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="165">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/router/mainPage.js">
+    <entry file="file://$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/tableExpand.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+        <state relative-caret-position="443">
+          <caret line="39" column="15" selection-start-line="39" selection-start-column="15" selection-end-line="39" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/houseManage/manageTable/manageTable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/tableExpand.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="105" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="105" />
+          <folding>
+            <element signature="e#913#941#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/houseTypeItem/houseTypeItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/houseManage/manageTable/tableExpand/houseTypeItem/houseTypeItem.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>

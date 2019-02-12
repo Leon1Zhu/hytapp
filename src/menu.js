@@ -28,6 +28,6 @@ global.MENU = [
     hasChild: false,
     menuName: '楼盘管理',
     menuIcon: 'ios-home',
-    linkHref: '/',
+    linkHref: '/houseManage',
   },
 ]

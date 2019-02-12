@@ -6,11 +6,14 @@ import Iview from 'iview';
 import aesjs from 'aes-js';
 import 'iview/dist/styles/iview.css';
 import './Interceptor/index';
-import './common/css/reset.css'
-import './common/css/resetIview.scss'
-import './filter'
-import './common/css/style.scss'
+import './common/css/reset.css';
+import './common/css/resetIview.scss';
+import './filter';
+import './common/css/style.scss';
+import './common/css/aliIcon.css';
 
+import ValienUpload from 'alienupload';
+Vue.use(ValienUpload);
 
 Vue.use(Iview);
 Vue.config.productionTip = false;
@@ -38,6 +41,7 @@ Vue.prototype.ISNULL = function(val) {
 };
 const key = [ 2, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 ];
 Vue.prototype.moment = require('moment');
+Vue.prototype.$imgUrl = 'http://njyfdc.com:9081/dummypath';
 Vue.prototype.$decrypt = (encryptedHex) => {
   //  准备解密十六进制字符串时，将其转换回字节
   const encryptedBytes = aesjs.utils.hex.toBytes(encryptedHex);

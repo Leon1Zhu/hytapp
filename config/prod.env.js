@@ -1,4 +1,4 @@
 module.exports = {
   NODE_ENV: '"production"',
-  host: '"http://localhost:9090"',
+  host: '"http://localhost:8888"',
 }

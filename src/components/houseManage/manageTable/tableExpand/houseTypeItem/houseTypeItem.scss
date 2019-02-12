@@ -1,0 +1,44 @@
+.house-type-item {
+  border: 1px solid rgba(151, 151, 151, 0.2964);
+  figure {
+    position: relative;
+    img {
+      width: 100%;
+      border-bottom: 1px solid #FAE7C9;
+    }
+  }
+  figure:hover {
+    .img-top {
+      height: 30px;
+    }
+    .delete-img-icon {
+      font-size: 16px;
+    }
+  }
+
+  .type-info {
+    position: relative;
+    padding: 7px 10px;
+    .type-measure {
+      margin-top: 7px;
+      font-size: 12px;
+      color: #979797;
+    }
+    .type-price {
+      margin-top: 7px;
+      font-size: 12px;
+      color: #ff0000;
+    }
+    .type-label-content {
+      margin-top: 7px;
+    }
+    .type-label {
+      display: inline-block;
+      border: 1px solid rgba(185, 222, 248, 0.2964);
+      border-radius: 3px;
+      text-align: center;
+      color: #0284DC;
+      padding: 2px 3px;
+    }
+  }
+}

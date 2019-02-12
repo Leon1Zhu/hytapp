@@ -13,7 +13,7 @@ const appointment = resolve => require(['@/components/appointment/appointment.vu
 const telCord = resolve => require(['@/components/telCord/telCord.vue'], resolve);
 
 // 楼盘管理
-const houseManage = resolve => require(['@/components/telCord/telCord.vue'], resolve);
+const houseManage = resolve => require(['@/components/houseManage/houseManage.vue'], resolve);
 
 const mainPageRouter = {
   path: '/',
@@ -38,9 +38,9 @@ const mainPageRouter = {
       //needAlive表示该页面是否是标签页,keepAlive表示是否需要缓存改页面
       meta: {needAlive: true, keepAlive: false},
     },{
-      path: '/telCord',
-      component: telCord,
-      name: "来访记录",
+      path: '/houseManage',
+      component: houseManage,
+      name: "楼盘管理",
       //needAlive表示该页面是否是标签页,keepAlive表示是否需要缓存改页面
       meta: {needAlive: true, keepAlive: false},
     },

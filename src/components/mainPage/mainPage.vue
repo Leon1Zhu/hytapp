@@ -14,7 +14,7 @@
               <Icon  v-if="!ISNULL(menuItem.menuIcon)" :type="menuItem.menuIcon" />
               {{menuItem.menuName}}
             </template>
-            <MenuItem   v-for="(childrenItem,indexChildrenT) in menuItem.childMenuList" :name="index+'-'+indexChildrenT" @click.native="goPage(childrenItem.linkHref)" >
+            <MenuItem   v-for="(childrenItem,indexChildrenT) in menuItem.childMenuList" :key="indexChildrenT" :name="index+'-'+indexChildrenT" @click.native="goPage(childrenItem.linkHref)" >
               <Icon  v-if="!ISNULL(menuItem.menuIcon)" :type="menuItem.menuIcon" />
               <span >{{childrenItem.menuName}}</span>
             </MenuItem>
