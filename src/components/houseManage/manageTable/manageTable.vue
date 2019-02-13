@@ -6,7 +6,19 @@
   <div class="manage-table">
     <div class="table-content">
       <div v-if="data1.length > 0">
-        <Table  class="plantform-table" stripe :columns="columns1" :data="data1" ></Table>
+        <Table  class="plantform-table" stripe :columns="columns1" :data="data1" >
+          <template slot-scope="{ row, index }" slot="action">
+            <Tooltip content="编辑楼盘" placement="top" theme="light">
+              <i class="iconfont icon-bianji1 actionIcon"></i>
+            </Tooltip>
+            <Tooltip content="删除楼盘" placement="top" theme="light">
+              <i class="iconfont icon-shanchu actionIcon"></i>
+            </Tooltip>
+            <Tooltip content="查看楼盘" placement="top" theme="light">
+              <i class="iconfont icon-chakan actionIcon"></i>
+            </Tooltip>
+          </template>
+        </Table>
         <!--<Page :total="total" :page-size="pagelength"  size="small" @on-change="changePage($event)" />-->
       </div>
       <no-data-com v-else-if="data1.length < 1"></no-data-com>
@@ -27,6 +39,7 @@ export default {
       columns1: [
         {
           type: 'expand',
+          width: '50px',
           render: (h, params) => {
             return h(houseTableExpand, {
               props: {
@@ -125,6 +138,11 @@ export default {
             return h('div', this.moment(params.row.createTime).format('YYYY-MM-DD'));
           },
         },
+        {
+          title: '操作',
+          slot: 'action',
+          align: 'center'
+        }
       ],
       data1: [],
     };

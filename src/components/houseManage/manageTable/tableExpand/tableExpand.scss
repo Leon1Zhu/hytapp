@@ -57,4 +57,19 @@
       width: 33%;
     }
   }
+
+  .house-advatage-content {
+    .house-advatage-item {
+      margin-bottom: 7px;
+      .advatage-title, .title-index {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 7px;
+      }
+      .advantage-item-content {
+        font-size: 14px;
+        text-indent: 14px;
+      }
+    }
+  }
 }

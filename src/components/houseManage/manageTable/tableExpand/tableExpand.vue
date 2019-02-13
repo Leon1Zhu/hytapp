@@ -20,7 +20,10 @@
       <Panel name="2" class="house-advatage">
         楼盘优势
         <div class="house-advatage-content" slot="content">
-
+          <div class="house-advatage-item" v-for="(item, index) in row.advantage" :key="index">
+            <div class="advatage-title"><span class="title-index">{{index + 1}}.</span>{{item.title}}</div>
+            <div class="advantage-item-content">{{item.content}}</div>
+          </div>
         </div>
       </Panel>
       <Panel name="3" class="house-type" v-if="row.type && row.type.length > 0">

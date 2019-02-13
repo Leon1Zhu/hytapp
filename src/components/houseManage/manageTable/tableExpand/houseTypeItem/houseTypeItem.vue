@@ -7,7 +7,7 @@
     <figure>
       <div class="img-top">
         <div class="img-name">{{typeData.typeName}}</div>
-        <div class="iconfont icon-cha delete-img-icon" @click="deleteImg(item.id)"></div>
+        <div class="iconfont icon-cha delete-img-icon" @click="deleteType()"></div>
       </div>
       <img :src="$imgUrl + typeData.typeImg">
     </figure>
@@ -24,6 +24,7 @@
 
 <script>
 import './houseTypeItem.scss';
+import houseManageApi from '../../../../../api/houseManage';
 
 export default {
   name: 'house-type-item',
@@ -41,7 +42,21 @@ export default {
   components: {},
   created() {},
   mounted() {},
-  methods: {},
+  methods: {
+    deleteType(item) {
+      this.$Modal.confirm({
+        title: '户型删除提醒',
+        content: '确认删除户型['+this.typeData.typeName+']吗？',
+        onOk: () => {
+          houseManageApi.deleteType(this.typeData.id).then((response) => {
+            this.$Notice.success({
+              desc: '户型删除成功',
+            });
+          })
+        },
+      });
+    }
+  },
 }
 </script>
 
