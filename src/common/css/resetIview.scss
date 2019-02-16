@@ -204,3 +204,12 @@
 .ivu-modal-confirm-footer .ivu-btn-text.ivu-btn-large:hover{
   color: $menuSelectFontColor;
 }
+
+.ivu-checkbox-checked .ivu-checkbox-inner {
+  border-color: #06b9a5;
+  background-color: #06b9a5;
+}
+
+.ivu-form .ivu-form-item-label {
+  font-size: 14px;
+}

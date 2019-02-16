@@ -1,3 +1,21 @@
 .house-manage-drawer {
+  .ivu-form-item {
+    margin-bottom: 5px;
+  }
 
+  .imgs-title {
+    font-size: 14px;
+  }
+
+  .house-special-form-item .ivu-form-item-label {
+    width: 100%;
+    text-align: left;
+  }
+  .ivu-drawer-body {
+    display: flex;
+    flex-flow: column;
+    .ivu-form-label-right {
+      flex: 1;
+    }
+  }
 }

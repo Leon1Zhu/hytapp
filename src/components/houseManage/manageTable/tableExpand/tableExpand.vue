@@ -61,6 +61,12 @@ export default {
   mounted() {},
   methods: {
     deleteImg(item) {
+      if (this.row.imgs.length <= 1) {
+        this.$Notice.error({
+          desc: '楼盘图片不能为空',
+        });
+        return ;
+      }
       this.$Modal.confirm({
         title: '图片删除提醒',
         content: '确认删除该图片吗',
@@ -69,6 +75,7 @@ export default {
             this.$Notice.success({
               desc: '图片删除成功',
             });
+            this.$emit('deleteImg')
           })
         },
       });

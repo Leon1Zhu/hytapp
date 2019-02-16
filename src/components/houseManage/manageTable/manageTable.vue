@@ -8,11 +8,17 @@
       <div v-if="data1.length > 0">
         <Table  class="plantform-table" stripe :columns="columns1" :data="data1" >
           <template slot-scope="{ row, index }" slot="action">
+            <Tooltip content="添加优势" placement="top" theme="light">
+              <i class="iconfont icon-tuiguangyoushi actionIcon" @click="manageAdvantage(row)"></i>
+            </Tooltip>
+            <Tooltip content="添加户型" placement="top" theme="light">
+              <i class="iconfont icon-huxing actionIcon" @click="manageHouseType(row)"></i>
+            </Tooltip>
             <Tooltip content="编辑楼盘" placement="top" theme="light">
-              <i class="iconfont icon-bianji1 actionIcon"></i>
+              <i class="iconfont icon-bianji1 actionIcon" @click="editHouse(row)"></i>
             </Tooltip>
             <Tooltip content="删除楼盘" placement="top" theme="light">
-              <i class="iconfont icon-shanchu actionIcon"></i>
+              <i class="iconfont icon-shanchu actionIcon" @click="deleteHouse(row)"></i>
             </Tooltip>
             <Tooltip content="查看楼盘" placement="top" theme="light">
               <i class="iconfont icon-chakan actionIcon"></i>
@@ -22,6 +28,8 @@
         <!--<Page :total="total" :page-size="pagelength"  size="small" @on-change="changePage($event)" />-->
       </div>
       <no-data-com v-else-if="data1.length < 1"></no-data-com>
+      <advantage-manage ref="advantageManageModel" @addAdvantage="refreshData"></advantage-manage>
+      <type-manage-model ref="typeManageModel" @addAdvantage="refreshData"></type-manage-model>
     </div>
   </div>
 </template>
@@ -31,6 +39,8 @@ import './manageTable.scss';
 import houseApi from '../../../api/houseManage';
 import noDataCom from '../../noDataCom/noDataCom'
 import houseTableExpand from './tableExpand/tableExpand';
+import advantageManage from './advantageManage/advantageManage';
+import typeManageModel from './hytTypeModel/hytTypeModel';
 
 export default {
   name: 'manage-table',
@@ -44,6 +54,11 @@ export default {
             return h(houseTableExpand, {
               props: {
                 row: params.row
+              },
+              on: {
+                deleteImg: () => {
+                  this.refreshData();
+                },
               }
             })
           }
@@ -62,9 +77,6 @@ export default {
           title: '楼盘地址',
           key: 'address',
           align: 'center',
-          // render: (h, params) => {
-          //   return h('div', params.row.hytHouse.houseName);
-          // },
         },
         {
           title: '预约电话',
@@ -150,6 +162,8 @@ export default {
   components: {
     noDataCom,
     houseTableExpand,
+    advantageManage,
+    typeManageModel
   },
   created() {
     this.init();
@@ -159,8 +173,33 @@ export default {
     init() {
       houseApi.getAllHouse().then((response) => {
         this.data1 = response.data;
-        // console.log(111)
       })
+    },
+    deleteHouse(row) {
+      this.$Modal.confirm({
+        title: '楼盘删除提醒',
+        content: '确认删除楼盘['+row.houseName+']',
+        onOk: () => {
+          houseApi.deleteHouse(row.id).then((response) => {
+            this.$Notice.success({
+              desc: '楼盘删除成功',
+            });
+            this.refreshData()
+          })
+        },
+      });
+    },
+    refreshData() {
+      this.$emit('refreshData');
+    },
+    manageAdvantage(data) {
+      this.$refs.advantageManageModel.openModel(data);
+    },
+    manageHouseType(data) {
+      this.$refs.typeManageModel.openModel(data);
+    },
+    editHouse(row) {
+      this.$emit('editHouse', row)
     }
   },
 }

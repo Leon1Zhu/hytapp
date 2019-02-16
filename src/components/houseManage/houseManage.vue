@@ -4,12 +4,11 @@
 -->
 <template>
   <section id="houseManage">
-    <!--<alienUpload ref="uploadImg2" :url="imageUploadUrl"  @delete-img="deleteImg" :imageLimit="imageLimit" @upload-img-success="uploadImg"  class="sec_upload" style="margin-top: 10px;" uploadType="all" :BtnColor="systemColor" :progressColor="systemColor" :compressQuality="compressQuality" showProgress   @count-exceed-limit="countExceedLimit"></alienUpload>-->
     <div class="action-menu">
-      <Button style="font-size: 14px;" class="add-new-house" type="primary" @click="openDrawer"><i class="iconfont icon-jia"></i>新增楼盘</Button>
+      <Button style="font-size: 14px;" class="add-new-house" type="primary" @click="addNewHouse"><i class="iconfont icon-jia"></i>新增楼盘</Button>
     </div>
-    <manage-table></manage-table>
-    <house-manage-drawer ref="houseManageDrawer"></house-manage-drawer>
+    <manage-table ref="houseManageTable" @refreshData="closeDrawer" @editHouse="editHouse"></manage-table>
+    <house-manage-drawer ref="houseManageDrawer" @closeDrawer="closeDrawer"></house-manage-drawer>
   </section>
 </template>
 <script>
@@ -21,11 +20,6 @@ export default {
   name: 'house-manage',
   data() {
     return {
-      imageUploadUrl: 'http://njyfdc.com:8888/api/upload',
-      systemColor: '#06b9a5',
-      compressQuality:.6,
-      uploadFileList: [],
-      imageLimit: 1,
     };
   },
   components: {
@@ -38,15 +32,26 @@ export default {
     openDrawer () {
       this.$refs.houseManageDrawer.openDrawer();
     },
-    uploadImg(file,response){
-      console.log(file)
+    closeDrawer() {
+      this.$refs.houseManageTable.init();
     },
-    deleteImg(file) {
-
+    addNewHouse() {
+      this.$refs.houseManageDrawer.clearDate();
+      this.openDrawer();
     },
-    countExceedLimit(e) {
-      console.log(e)
-    },
+    editHouse(row) {
+      const rowTemp = JSON.parse(JSON.stringify(row));
+      const special = [];
+      ['highquality', 'like', 'recommend', 'specialcar'].forEach((item) => {
+        if (rowTemp[item]) special.push(item);
+      })
+      rowTemp.imgs = [];
+      rowTemp.special = special;
+      rowTemp.price = rowTemp.price && rowTemp.price.replace('元/㎡', '');
+      rowTemp.area = rowTemp.area && rowTemp.area.replace('㎡','');
+      this.$refs.houseManageDrawer.houseData = rowTemp;
+      this.openDrawer();
+    }
   },
 }
 </script>

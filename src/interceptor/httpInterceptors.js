@@ -32,7 +32,6 @@ axios.interceptors.response.use(
   (error) => {
     if (process.env.NODE_ENV === 'development') {
       console.error('请求出错');
-      console.log(error);
     }
     Notice.error({
       desc: JSON.stringify(error.response.data.message),
